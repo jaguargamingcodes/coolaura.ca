@@ -16,14 +16,15 @@
   <div id="topGap" style="height: 10vh;"><button id="settings" onclick="document.getElementById('settingsMenu').style.display = 'block'">⋮</button></div>
   <div id="settingsMenu">
     <span>Settings</span>
-      <button style="background-color: transparent; border: none;" onclick="document.getElementById('settingsMenu').style.display = 'none'"> ❌</button>    
+      <button style="background-color: transparent; border: none;" onclick="document.getElementById('settingsMenu').style.display = 'none'"> ❌</button>
     <div class="bar"></div>
       <strong>Search Engine:</strong>
       <br>
       <button class="configs" onclick="localStorage.setItem('searchengine','google')">Google</button>
       <button class="configs" onclick="localStorage.setItem('searchengine','ecosia')">Ecosia</button>
-      <button class="configs" onclick="localStorage.setItem('searchengine','yandex')">Yandex</button>
       <button class="configs" onclick="localStorage.setItem('searchengine','vyntr')">Vyntr</button>
+      <button class="configs" onclick="localStorage.setItem('searchengine','bliptext')">Bliptext</button>
+      <button class="configs" onclick="localStorage.setItem('searchengine','yandex')">Yandex</button>
       <button class="configs" onclick="localStorage.setItem('searchengine','duckduckgo')">DuckDuckGo</button>
       <button class="configs" onclick="localStorage.setItem('searchengine','startpage')">Startpage</button>
       <button class="configs" onclick="localStorage.setItem('searchengine','brave')">Brave</button>
