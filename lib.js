@@ -42,3 +42,11 @@ function search() {
 }
 
 console.log(localStorage.getItem('searchengine'))
+
+window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("search").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            search();
+        }
+    });
+});
