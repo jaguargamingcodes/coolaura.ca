@@ -2,6 +2,6 @@
 
 ## The best new browser homepage with maximum aura.
 
-![](./cool_aura_screenshot_cool.png?raw=true "Aurashot")
+![](./cooler_aura_swagshot.png?raw=true "Swagshot")
 
 ### BETA: Expect bugs.
