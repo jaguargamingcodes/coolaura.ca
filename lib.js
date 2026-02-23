@@ -1,16 +1,16 @@
-if(localStorage.getItem('searchengine') === null ) {
-    localStorage.setItem('searchengine','duckduckgo')
+if(localStorage.getItem('searchengine') === null ) { // If no search engine is selected it will default to DDG
+    localStorage.setItem('searchengine','duckduckgo') // Sets search engine to DDG
 }
-
+// Search function
 function search() {
     let url = document.getElementById("search").value
     if(url.includes('.')) {
         console.log(url)
         window.location.href = `https://${url}`
-    } else if(url === "") {
+    } else if(url === "") { // If the URL is empty it warns that it can't be empty
         document.getElementById('search').setAttribute('placeholder','The search bar cannot be empty.')
     }
-
+    // Search engines
     else if(localStorage.getItem('searchengine') === 'google') {
         window.location.href = `https://google.com/search?q=${url}&safe=active&ssui=on`;
     }
@@ -43,9 +43,9 @@ function search() {
     }
 }
 
-console.log(localStorage.getItem('searchengine'))
+console.log(localStorage.getItem('searchengine')) // Logs your saved search engine
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => { // Enter key listener
     document.getElementById("search").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             search();
