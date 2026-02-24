@@ -23,8 +23,8 @@ body {
 }
 
 .picker {
-    width: 1vw;
-    height: 1vw;
+    width: 20px;
+    height: 20px;
     border: none;
     border-style: none;
     border-radius: 8px;
@@ -55,6 +55,17 @@ body {
     border-radius: 5px;
 }
 
-#testing {
-    font-size: 100px;
+
+
+#document_writing {
+    width: 97vw;
+    height: 92vh;
+    font-size: 20px;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+#search {
+    width: 50vw;
+    height: 4vh;
+    color: red;
 }
