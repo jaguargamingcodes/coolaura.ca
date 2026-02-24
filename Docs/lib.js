@@ -88,7 +88,7 @@ function saveState() {
         localStorage.setItem('DocTextColor', text_color_val);
         localStorage.setItem('DocTextFont', text_font_family);
         localStorage.setItem('DocTextSize', text_size);
-        localStorage.setItem('DocText', text_value)
+        localStorage.setItem('DocText', text_value + " ")
     }
     console.log('bg color', localStorage.getItem('DocTextBgColor'), 'color', localStorage.getItem('DocTextColor'), 'font', localStorage.getItem('DocTextFont'), 'size', localStorage.getItem('DocTextSize'), 'val', localStorage.getItem('DocText'))
 }
