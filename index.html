@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cool_aura_main_page_style.css">
   <link rel="icon" type="image/png" href="icon.png">
   <title>Cool Aura</title>
   <meta charset="UTF-8">
 </head>
-
 <body>
-  <div id="topGap" style="height: 10vh;"><button id="settings"
-      onclick="document.getElementById('settingsMenu').style.display = 'block'">⋮</button></div>
+  <div id="topGap" style="height: 10vh;"><button id="settings" onclick="document.getElementById('settingsMenu').style.display = 'block'">⋮</button></div>
   <div id="settingsMenu">
     <span>Settings</span>
-    <button style="background-color: transparent; border: none;"
-      onclick="document.getElementById('settingsMenu').style.display = 'none'"><strong
-        style="font-size: 30px;">×</strong></button>
+      <button style="background-color: transparent; border: none;" onclick="document.getElementById('settingsMenu').style.display = 'none'"><strong style="font-size: 30px;">×</strong></button>    
     <div class="bar"></div>
-    <strong>Browser:</strong>
-    <br>
-    <button class="configs" onclick="localStorage.setItem('browser','chrome')">Chrome</button>
-    <button class="configs" onclick="localStorage.setItem('browser','duckduckgo')">DuckDuckGo</button>
-    <br>
-    <br>
-    <div class="bar"></div>
+      <strong>Browser:</strong>
+      <br>
+      <button class="configs" onclick="localStorage.setItem('browser','chrome')">Chrome</button>
+      <button class="configs" onclick="localStorage.setItem('browser','duckduckgo')">DuckDuckGo</button>
+      <br>
+      <br>
+      <div class="bar"></div>
   </div>
   <div id="title_container">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <h1 id="mainTitle">Cool Aura</h1>
-  </div>
-  <br><br><br><br>
-  <div>
-    <h1 id="subtitle_text">The website to do everything.</h1>
-  </div>
-  <br><br><br>
-  <div id="searchBox">
-    <input type="text" autocomplete="off"" id=" search" placeholder="Search or type a URL">
-    <button id="searchexecuter" onclick="search()">⌕</button>
-  </div>
-  <button id="customization_tools"
-    onclick="document.getElementById('panel').style.display = 'block'">🖌customize</button>
-  <div id="panel" onclick="document.getElementById('panel').style.display = 'none'; console.log('hello')">
-    <div>
-      <h1>Theme:</h1>
     </div>
-    <div class="themes c" id="redT" onclick="localStorage.setItem('theme','rgb(33, 9, 9)')"></div>
+    <br><br><br><br>
+    <div>
+    <h1 id="subtitle_text">The website to do everything.</h1>
+    </div>
+    <br><br><br>
+    <div id="searchBox">
+    <input type="text" autocomplete="off"" id="search" placeholder="Search or type a URL">
+    <button id="searchexecuter" onclick="search()">⌕</button>
+    </div>
+    <button id="customization_tools" onclick="document.getElementById('panel').style.display = 'block'">🖌customize</button>
+    <div id="panel" onclick="document.getElementById('panel').style.display = 'none'; console.log('hello')"><div><h1>Theme:</h1></div>
+        <div class="themes c" id="redT" onclick="localStorage.setItem('theme','rgb(33, 9, 9)')"></div>
     <div class="themes c" id="blueT" onclick="localStorage.setItem('theme','rgb(9, 9, 33)')"></div>
-    <div class="themes c" id="greenT" onclick="localStorage.setItem('theme','rgb(9, 33, 9)')"></div>
+    <div class="themes c" id="greenT" onclick="localStorage.setItem('theme','rgb(9, 33, 9)')"></div> 
     <div class="themes c" id="blackT" onclick="localStorage.setItem('theme','rgb(19, 19, 19)')"></div>
   </div>
   <script src="lib.js"></script>
 </body>
-
 </html>
