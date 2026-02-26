@@ -1,24 +1,38 @@
-if(localStorage.getItem('browser') === null ) {
-    localStorage.setItem('browser','chrome')
+if (localStorage.getItem('browser') === null) {
+    localStorage.setItem('browser', 'chrome')
 }
 
 function search() {
     let url = document.getElementById("search").value
-    if(url.includes('.')) {
+    if (url.includes('.')) {
         console.log(url)
         console.log(url)
         window.location.href = `https://${url}`
-    } else if(url === "") {
-        document.getElementById('search').setAttribute('placeholder','Search Box Cannot Be Empty')
+    } else if (url === "") {
+        document.getElementById('search').setAttribute('placeholder', 'Search Box Cannot Be Empty')
     }
-    
-    else if(localStorage.getItem('browser') === 'chrome') {
+
+    else if (localStorage.getItem('browser') === 'chrome') {
         window.location.href = `https://google.com/search?q=${url}&safe=active&ssui=on`;
     }
 
-    else if(localStorage.getItem('browser') === 'duckduckgo') {
+    else if (localStorage.getItem('browser') === 'duckduckgo') {
         window.location.href = `https://duckduckgo.com/?q=${url}&ia=web`;
     }
 }
 
+
+input = document.getElementById("search");
+input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        search()
+    }
+});
 console.log(localStorage.getItem('browser'))
+
+if (localStorage.getItem('theme') === null) {
+    localStorage.setItem('theme', 'rgb(19, 19, 19)')
+}
+
+document.body.style.backgroundColor = localStorage.getItem('theme')
