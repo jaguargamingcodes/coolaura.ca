@@ -2,6 +2,9 @@ if (localStorage.getItem('browser') === null) {
     localStorage.setItem('browser', 'chrome')
 }
 
+
+
+
 function search() {
     let url = document.getElementById("search").value
     if (url.includes('.')) {
@@ -36,3 +39,5 @@ if (localStorage.getItem('theme') === null) {
 }
 
 document.body.style.backgroundColor = localStorage.getItem('theme')
+
+

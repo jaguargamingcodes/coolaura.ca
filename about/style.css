@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(217, 217, 217);
+    font-family: 'Tiktok Sans';
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#AboutHeader {
+    font-family: 'Audiowide';
+    font-size: 7vh;
+}
+
+.bar {
+    width: 99vw;
+    height: 0.4vh;
+    background-color: rgb(105, 105, 105);
+    border-radius: 
+    100px;
+}
+
+#gp {
+    text-shadow: 3px 3px red, -3px -3px blue;
+}
