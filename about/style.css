@@ -24,3 +24,7 @@ body {
 #gp {
     text-shadow: 3px 3px red, -3px -3px blue;
 }
+ #ver {
+    display: grid;
+    justify-items: end;
+ }
