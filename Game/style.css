@@ -1,0 +1,22 @@
+body {
+    background-color: azure;
+}
+
+#game {
+    width: 98vw;
+    height: 70vh;
+    border: 5px solid red;
+    position:relative;
+}
+
+#player {
+    width: 5vh;
+    height: 5vh;
+    background-color: blue;
+    position: absolute;
+    left: 12px;
+    right: 0;
+    overflow: hidden;
+    bottom: 0;
+    transition: left 2s, right 2s, bottom 2s ;
+}
