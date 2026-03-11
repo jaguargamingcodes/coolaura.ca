@@ -114,12 +114,13 @@ body {
 }
 
 #searchBox {
-    background-color: rgba(61, 61, 61, 0.6);
+    background-color: rgba(0, 0, 0, 0.29);
     width: max-content;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
     transition: box-shadow 1.5s, background-color 1.5s, color 1.5s;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.374);
 }
 
 #searchexecuter {
@@ -163,13 +164,13 @@ body {
 
 
 #apps:hover {
-    background-color: rgba(61, 61, 61, 0.6);
+    background-color: rgba(61, 61, 61, 0.5);
 }
 
 
 
 #settings:hover {
-    background-color: rgba(61, 61, 61, 0.6);
+    background-color: rgba(61, 61, 61, 0.5);
     cursor: pointer;
 }
 
@@ -179,7 +180,7 @@ body {
     height: 20vh;
     padding: 10px;
     color: rgb(255, 255, 255);
-    background-color: rgb(37, 37, 37);
+    background-color: rgba(37, 37, 37, 0.394);
     border-radius: 10px;
     position: absolute;
     font-family: 'Tiktok Sans';
@@ -237,7 +238,7 @@ button {
     width: 50vw;
     z-index: 9;
     padding-top: 2vh;
-    background-color: rgba(61, 61, 61, 0.6);
+    background-color: rgba(61, 61, 61, 0.5);
     justify-self: right;
     margin-top: 3vh;
     text-align: center;
@@ -286,7 +287,7 @@ button {
 
 
 .Links {
-    background-color: rgba(54, 53, 62, 0.633);
+    background-color: rgba(54, 53, 62, 0.933);
     font-style: none;
     text-decoration: none;
     border-radius: 10px;
@@ -295,14 +296,22 @@ button {
     padding-right: 2px;
     font-size: 1.7vh;
     transition: background-color 1s;
-    color:rgba(11, 11, 11, 0.362);
+    color:rgba(255, 255, 255, 0.562);
     margin: 3px;
 }
 
 .Links:hover {
-    background-color: rgba(236, 236, 236, 0.6);
+    background-color: rgba(236, 236, 236, 0.5);
 }
 
 #shortCut {
    gap: none;
+}
+
+#wallpaper_cont {
+    background-repeat: no-repeat;
+    width: 99vw;
+    height: 98.5vh;
+    background-position: center;
+    background-size: cover;
 }

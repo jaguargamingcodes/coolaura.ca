@@ -78,3 +78,12 @@ function bm() {
         }
     }
 
+function wallpaper() {
+let img = window.prompt('Set Wallpaper URL')
+    document.getElementById('wallpaper_cont').style.backgroundImage = `url(${img})`
+    localStorage.setItem('wallpapersrc', img)
+}
+
+
+
+    document.getElementById('wallpaper_cont').style.backgroundImage = `url(${localStorage.getItem('wallpapersrc')})`

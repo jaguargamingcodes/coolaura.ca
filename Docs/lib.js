@@ -105,4 +105,3 @@ loadState();
 
 console.log(localStorage.getItem('DocText'))
 
-

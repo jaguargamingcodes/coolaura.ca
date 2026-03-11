@@ -1,32 +1,49 @@
+let moveyes = true;
 let playerpositionX = 0;
 const movedistance = 100;
 let playerpositionY = 0;
-m = false
+let isjumping = false; 
+let ismoving = false;
+
 function move(val) {
-    if(m) {}
-   const player = document.getElementById('player');
-   playerpositionX += val;
-   m=true;
-   player.style.left = playerpositionX + "px"
-   m=false
-}
-let j = false;
-function jump() {
-    if(j) {}
-    j = true;
+     if(!moveyes) return;
+     moveyes = false;
     const player = document.getElementById('player');
-    const height = 1000;
-    playerpositionY = height;
-    player.style.bottom = playerpositionY + "px"
-    setTimeout(function() {playerpositionY = 0; player.style.bottom = playerpositionY + "px"; j=false}, 300)
-    console.log
+    playerpositionX += val;
+    player.style.left = playerpositionX + "px";
+    setTimeout(function(){ismoving = false;}, 200)
+    setTimeout(() => { moveyes = true; }, 100); 
 }
 
-document.addEventListener('keydown', (event) => {
-     if (event.key === "ArrowRight") move(movedistance)
-     if (event.key === "ArrowLeft") move(-movedistance)
-});
+function jump() {
+    if (isjumping === true) return;  
+    isjumping = true; 
+    const player = document.getElementById('player')
+    playerpositionY = 200; 
+    player.style.bottom = playerpositionY + "px";
+    setTimeout(function() {
+        playerpositionY = 0; 
+        player.style.bottom = "0px";
+        setTimeout(() => {
+            isjumping = false; 
+        }, 400); 
+    }, 400); 
+}
+
 
 document.addEventListener('keydown', (event) => {
-     if (event.key === "ArrowUp") {jump()} 
+  if (event.key === "ArrowUp" && event.repeat) return;
+    if (event.key === "ArrowUp") {  if (!isjumping) {jump();}}
+   if (event.key === "ArrowRight") move(movedistance);
+    if (event.key === "ArrowLeft") move(-movedistance);
 });
+
+setInterval(() => {
+    const player = document.getElementById('player');
+    if (playerpositionY > 0 && !isjumping) {
+        playerpositionY -= 10; 
+        if (playerpositionY < 0) playerpositionY = 0; 
+        player.style.bottom = playerpositionY + "px";
+    }
+}, 1);
+
