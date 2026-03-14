@@ -250,6 +250,7 @@ button {
     align-content: center !important;
     border-radius: 20px !important;
     display: none;
+    backdrop-filter: blur(10px);
 }
 
 .gsc-input-box:hover {
