@@ -104,9 +104,13 @@ body {
 .gsc-control-cse {
     background-color: transparent !important;
     border: none !important;
+    max-width: 600px !important; /* Set a specific max-width */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: transparent !important;
+    border: none !important;
 }
 
-/* Target the actual input box area */
 .gsc-input-box {
     background-color: rgba(0, 0, 0, 0.29) !important;
     width: 400px !important; /* 'max-content' may cause issues; use a fixed width or % */
@@ -241,12 +245,16 @@ button {
     display: none !important;
 }
 
-#searchBox:hover {
+.gsc-input-box:hover {
     box-shadow: 1px 1px 20px 10px #ffffff,
         -1px -1px 20px 5px rgb(0, 30, 255),
         -2px -2px 20px 5px blue !important;
     background-color: #ffffff !important;
     color: black !important;
+}
+
+.gsc-search-box table {
+    margin-bottom: 0 !important;
 }
 
 .themes {
