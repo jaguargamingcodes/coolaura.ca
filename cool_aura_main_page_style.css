@@ -81,19 +81,7 @@ body {
     font-weight: 100 !important;
 }
 
-#search {
-    width: 30vw !important;
-    height: 2.3vh !important;
-    font-family: 'Tiktok Sans' !important;
-    font-size: 20px !important;
-    animation-name: search_color !important;
-    animation-duration: 3s !important;
-    animation-iteration-count: infinite !important;
-    font-weight: 400 !important;
-    border: none !important;
-    outline: none !important;
-    background-color: transparent !important;
-}
+
 
 @keyframes search_color {
     0% {
@@ -113,23 +101,28 @@ body {
     }
 }
 
-#searchBox {
-    background-color: rgba(0, 0, 0, 0.29) !important ;
-    width: max-content  !important;
-    margin-left: auto !important;
-    margin-right: auto  !important;
-    border-radius: 5px !important;
-    transition: box-shadow 1.5s, background-color 1.5s, color 1.5s !important;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.374)  !important;
+.gsc-control-cse {
+    background-color: transparent !important;
+    border: none !important;
 }
 
-#searchexecuter {
-    font-size: 20px !important;
-    border: none !important;
-    background-color: transparent !important;
-    color: white !important;
-    text-shadow: 1px 1px red, -1px -1px blue !important;
+/* Target the actual input box area */
+.gsc-input-box {
+    background-color: rgba(0, 0, 0, 0.29) !important;
+    width: 400px !important; /* 'max-content' may cause issues; use a fixed width or % */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 5px !important;
+    transition: box-shadow 1.5s, background-color 1.5s !important;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.374) !important;
 }
+
+/* Optional: Target the inner input text field */
+input.gsc-input {
+    background: none !important;
+    color: white !important;
+}
+
 
 #settings {
     display: grid !important;
