@@ -27,4 +27,4 @@ let img = window.prompt('Set Wallpaper')
     }
   }
 
-  document.getElementById('searchExecuter').setAttribute('click', function(){performCustomSearch()})
+  
