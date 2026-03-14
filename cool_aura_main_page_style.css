@@ -113,18 +113,23 @@ body {
 
 .gsc-input-box {
     background-color: rgba(0, 0, 0, 0.29) !important;
-    width: 400px !important; /* 'max-content' may cause issues; use a fixed width or % */
+    width: 400px !important; 
     margin-left: auto !important;
     margin-right: auto !important;
     border-radius: 5px !important;
     transition: box-shadow 1.5s, background-color 1.5s !important;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.374) !important;
+    animation-name: search_color !important;
 }
 
-/* Optional: Target the inner input text field */
 input.gsc-input {
     background: none !important;
-    color: white !important;
+    color: rgb(0, 0, 0) ;
+}
+
+.gsc-results-wrapper-overlay {
+    background-color: rgba(0, 0, 0, 0.6) !important; 
+    backdrop-filter: blur(5px); 
 }
 
 
