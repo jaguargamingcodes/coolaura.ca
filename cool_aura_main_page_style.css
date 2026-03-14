@@ -249,7 +249,7 @@ button {
     justify-content: center !important;
     align-content: center !important;
     border-radius: 20px !important;
-    display: none !important;
+    display: none;
 }
 
 .gsc-input-box:hover {
