@@ -18,3 +18,13 @@ let img = window.prompt('Set Wallpaper')
 
 
     document.getElementById('wallpaper_cont').style.backgroundImage = `url(${localStorage.getItem('wallpapersrc')})`
+
+ function performCustomSearch() {
+    var query = document.getElementById('search').value;
+    if (query) {
+      var element = google.search.cse.element.getElement('searchResults'); // 'searchResults' is the div ID
+      element.execute(query);
+    }
+  }
+
+  document.getElementById('searchExecuter').setAttribute('click', function(){performCustomSearch()})
