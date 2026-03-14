@@ -317,3 +317,7 @@ button {
 }
 
 
+input.gsc-input {
+    border: 2px solid blue !important;
+    border-radius: 5px !important;
+}
