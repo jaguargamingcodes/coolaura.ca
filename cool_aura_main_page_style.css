@@ -36,39 +36,7 @@ body {
     position: sticky !important;
 }
 
-@keyframes opening_animation {
-    0% {
-        text-shadow:
-            6px 6px red,
-            -6px -6px blue !important;
-        color: black
-    }
 
-    25% {
-        text-shadow:
-            6px 6px orange,
-            -6px -6px rgb(0, 255, 255) !important;
-        color: rgb(81, 0, 0) !important;
-    }
-
-    50% {
-        text-shadow: 6px 6px yellow,
-            -6px -6px rgb(0, 255, 0) !important;
-        color: rgb(0, 0, 113) !important;
-    }
-
-    75% {
-        text-shadow: 6px 6px rgb(0, 255, 234),
-            -6px -6px yellow !important;
-        color: rgb(0, 60, 0) !important;
-    }
-
-    100% {
-        text-shadow: 6px 6px blue,
-            -6px -6px red !important;
-        color: black !important;
-    }
-}
 
 #title_container:hover {
     color: greenyellow
@@ -121,6 +89,7 @@ body {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.374) !important;
     animation-name: search_color !important;
     backdrop-filter: blur(5px);
+    font-family: 'Tiktok Sans' !important;
 }
 
 input.gsc-input {
