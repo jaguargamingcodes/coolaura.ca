@@ -358,7 +358,7 @@ button {
     margin-bottom: 8px !important;
     padding: 10px !important;
     border-radius: 6px !important;
-    background-color: #ffffff35;
+    background-color: #ffffff35 !important;
 }
 
 .gs-title, .gs-title * {
@@ -371,5 +371,5 @@ button {
 }
 
 .gsc-modal-background-image, .gsc-modal-background-image-visible {
-    background-color: red;
+    background-color: red !important;
 }
