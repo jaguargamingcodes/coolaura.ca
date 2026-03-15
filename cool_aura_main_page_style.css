@@ -399,11 +399,12 @@ b {
     content: "Cool Aura Search Engine"; 
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 15px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
     font:100;
     font-family: 'Audiowide';
+    width: fit-content; 
+    height: fit-content;
 }
