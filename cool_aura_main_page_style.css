@@ -353,7 +353,7 @@ button {
     font-size: 12px !important;
 }
 
-.gsc-webResult.gsc-result {
+.gsc-webResult, .gsc-result {
     border: 1px solid #eeeeee !important; 
     margin-bottom: 8px !important;
     padding: 10px !important;
@@ -364,4 +364,12 @@ button {
 .gs-title, .gs-title * {
     font-weight: normal !important;
     text-decoration: none !important;
+}
+
+.gsc-tabHeader, .gsc-inline-block, .gsc-tabhActive {
+    border-radius: 30px;
+}
+
+.gsc-modal-background-image, .gsc-modal-background-image-visible {
+    background-color: red;
 }
