@@ -371,5 +371,13 @@ button {
 }
 
 .gsc-modal-background-image, .gsc-modal-background-image-visible {
-    background-color: red !important;
+    background-color: rgba(21, 255, 0, 0.29) !important;
+}
+
+.gcsc-branding-img-noclear {
+    display: none !important;
+}
+
+.gcsc-more-maybe-branding-root {
+    display: none !important;
 }
