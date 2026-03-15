@@ -340,6 +340,9 @@ button {
     font-family: 'Tiktok Sans', sans-serif !important;
     font-size: 18px !important;
     font-weight: bold !important;
+    color:rgb(0, 0, 0) !important;
+    background-color: rgba(136, 255, 0, 0.172) !important;
+    border-radius: 20px !important;
 }
 
 .gs-snippet {
@@ -371,7 +374,7 @@ button {
 }
 
 .gsc-modal-background-image, .gsc-modal-background-image-visible {
-    background-color: rgba(21, 255, 0, 0.29) !important;
+    background-image: linear-gradient(rgba(21, 255, 0, 0.29), rgba(0, 0, 255, 0.29)) !important;
 }
 
 .gcsc-branding-img-noclear {
@@ -380,4 +383,9 @@ button {
 
 .gcsc-more-maybe-branding-root {
     display: none !important;
+}
+
+.gstl_50, .gssb_c {
+    background-color: #000000a4 !important;
+    color: white !important;
 }
