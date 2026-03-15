@@ -388,3 +388,20 @@ button {
 b {
     color: red !important;
 }
+
+#gsc-i-id1 {
+    animation-name: search_color !important;
+    animation-duration: 4s !important;
+    animation-iteration-count: infinite !important;
+}
+
+.gsc-results-wrapper-overlay:before {
+    content: "Test"; 
+    display: block;
+    background: #ffcc00; 
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
