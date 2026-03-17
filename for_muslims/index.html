@@ -60,7 +60,7 @@
             const params = adhan.CalculationMethod.NorthAmerica();
             const prayerTimes = new adhan.PrayerTimes(coords, new Date(), params);
             
-            document.getElementById('times').innerText = "Fajr: " + prayerTimes.fajr.toLocaleTimeString();
+            document.getElementById('subtitle_text').innerText = "Fajr: " + prayerTimes.fajr.toLocaleTimeString();
             console.log("Fajr:", prayerTimes.fajr);
         };
  </script>
