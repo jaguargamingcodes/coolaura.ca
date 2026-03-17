@@ -1,4 +1,4 @@
-import { PrayerTimeCalculator } from "https://esm.sh";
+
 if (localStorage.getItem('theme') === null) {
     localStorage.setItem('theme', 'rgb(19, 19, 19)')
 }
