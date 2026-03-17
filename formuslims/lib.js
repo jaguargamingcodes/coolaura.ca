@@ -1,3 +1,5 @@
+import { PrayerTimeCalculator } from "@masaajid/prayer-times";
+
 if (localStorage.getItem('theme') === null) {
     localStorage.setItem('theme', 'rgb(19, 19, 19)')
 }
@@ -42,3 +44,4 @@ document.getElementById('subtitle_text').innerHTML = islamicDate;
 });
 
 const times = prayer.calculate()
+
