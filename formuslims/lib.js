@@ -34,3 +34,11 @@ let img = window.prompt('Set Wallpaper')
 const islamicDate = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', options).format(new Date());
 
 document.getElementById('subtitle_text').innerHTML = islamicDate;
+
+  const prayer = new PrayerTimeCalculator({
+  method: "ISNA", 
+  location: [43.6532, -79.3832],
+  timezone: "America/Toronto",
+});
+
+const times = prayer.calculate()
