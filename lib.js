@@ -27,12 +27,3 @@ let img = window.prompt('Set Wallpaper')
     }
   }
 
-const options = {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
-}
-
-const islamicDate = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', options).format(new Date());
-
-document.getElementById('subtitle_text').innerHTML = islamicDate;
