@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="cool_aura_main_page_muslim.css">
+  <link rel="icon" type="image/png" href="icon.png">
+  <title>Cool Aura -new tab</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="wallpaper_cont">
+  <div id="topGap" style="height: 10vh;">
+  </div>
+  <div id="title_container">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 id="mainTitle" ondblclick="bm();">Cool Aura</h1>
+  </div>
+  <br><br><br><br>
+  <div>
+    <h1 id="subtitle_text">The website to do everything.</h1>
+  </div>
+  <br><br><br>
+  <div class="gcse-search" id="searchBox"></div>
+  <br>
+  <br>
+  <div id="shortCut">
+  <a class="Links" href="https://coolaura.ca/Docs">docs</a>
+  <a class="Links" href="https://coolaura.ca/about">about</a>
+  </div>
+  <div id="results"></div>
+    <div id="panel" onclick="document.getElementById('panel').style.display = 'none';">
+    <div>
+      <h1>Theme:</h1>
+    </div>
+    <div class="themes c" id="redT" onclick="localStorage.setItem('theme',' rgb(64, 37, 37)')"></div>
+    <div class="themes c" id="blueT" onclick="localStorage.setItem('theme','rgb(0, 30, 100)')"></div>
+    <div class="themes c" id="greenT" onclick="localStorage.setItem('theme','rgb(16, 62, 16)')"></div>
+    <div class="themes c" id="blackT" onclick="localStorage.setItem('theme','rgb(19, 19, 19)')"></div>
+    <h1>Wallpaper</h1>
+    <button id="wpset" onclick="wallpaper()">SET</button>
+  </div>
+  <button id="customization_tools"
+    onclick="document.getElementById('panel').style.display = 'block'">✎customize</button>
+  </div>
+<script async src="https://cse.google.com/cse.js?cx=f18aaa6d876cb43db">
+</script>
+  <script src="lib.js"></script>
+</body>
+
+</html>
