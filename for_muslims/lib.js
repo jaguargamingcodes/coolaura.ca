@@ -31,7 +31,7 @@ let img = window.prompt('Set Wallpaper')
     month: 'long',
     year: 'numeric'
 }
-
+window.onload = function() {
 const islamicDate = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', options).format(new Date());
 
 document.getElementById('subtitle_text').innerHTML = islamicDate;
@@ -47,4 +47,6 @@ document.getElementById('subtitle_text').innerHTML = islamicDate;
             <p><b>Maghrib:</b> ${prayerTimes.maghrib.toLocaleTimeString()}</p>
             <p><b>Isha:</b> ${prayerTimes.isha.toLocaleTimeString()}</p>
         `;
+
+};
 
