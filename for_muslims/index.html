@@ -2,7 +2,6 @@
 <html>
 
 <head>
-      <script src="https://cdn.jsdelivr.net"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -51,19 +50,7 @@
   </div>
 <script async src="https://cse.google.com/cse.js?cx=f18aaa6d876cb43db">
 </script>
- <script src="lib.js"></script>
- <script>
-        // window.onload ensures the script above is fully finished loading
-        window.onload = function() {
-            // Note: Adhan.js often exports to window.adhan
-            const coords = new adhan.Coordinates(43.4516, -80.3123);
-            const params = adhan.CalculationMethod.NorthAmerica();
-            const prayerTimes = new adhan.PrayerTimes(coords, new Date(), params);
-            
-            document.getElementById('subtitle_text').innerText = "Fajr: " + prayerTimes.fajr.toLocaleTimeString();
-            console.log("Fajr:", prayerTimes.fajr);
-        };
- </script>
+  <script type="module" src="lib.js"></script>
 </body>
 
 </html>

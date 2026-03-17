@@ -21,7 +21,7 @@ let img = window.prompt('Set Wallpaper')
  function performCustomSearch() {
     var query = document.getElementById('search').value;
     if (query) {
-      var element = google.search.cse.element.getElement('searchResults'); // 'searchResults' is the div ID
+      var element = google.search.cse.element.getElement('searchResults'); 
       element.execute(query);
     }
   }
