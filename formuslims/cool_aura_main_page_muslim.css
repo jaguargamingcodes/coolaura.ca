@@ -224,8 +224,8 @@ button {
 
 .gsc-input-box:hover {
     box-shadow: 1px 1px 20px 10px #ffffff,
-        -1px -1px 20px 5px rgb(0, 30, 255),
-        -2px -2px 20px 5px blue !important;
+        -1px -1px 20px 5px rgb(238, 255, 0),
+        -2px -2px 20px 5px rgb(255, 0, 0) !important;
     background-color: #ffffff !important;
     color: black !important;
 }
