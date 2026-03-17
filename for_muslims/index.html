@@ -52,6 +52,18 @@
 <script async src="https://cse.google.com/cse.js?cx=f18aaa6d876cb43db">
 </script>
  <script src="lib.js"></script>
+ <script>
+        // window.onload ensures the script above is fully finished loading
+        window.onload = function() {
+            // Note: Adhan.js often exports to window.adhan
+            const coords = new adhan.Coordinates(43.4516, -80.3123);
+            const params = adhan.CalculationMethod.NorthAmerica();
+            const prayerTimes = new adhan.PrayerTimes(coords, new Date(), params);
+            
+            document.getElementById('times').innerText = "Fajr: " + prayerTimes.fajr.toLocaleTimeString();
+            console.log("Fajr:", prayerTimes.fajr);
+        };
+ </script>
 </body>
 
 </html>
