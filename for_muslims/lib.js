@@ -1,4 +1,4 @@
-
+import { PrayerTimeCalculator } from "@masaajid/prayer-times";
 if (localStorage.getItem('theme') === null) {
     localStorage.setItem('theme', 'rgb(19, 19, 19)')
 }
