@@ -90,6 +90,8 @@ body {
     animation-name: search_color !important;
     backdrop-filter: blur(5px);
     font-family: 'Tiktok Sans' !important;
+    width: 30vw !important;
+    height: 5vh !important;
 }
 
 input.gsc-input {
