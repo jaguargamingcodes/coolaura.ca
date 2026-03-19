@@ -156,7 +156,7 @@ input.gsc-input {
     border-radius: 10px !important;
     position: absolute !important;
     font-family: 'Tiktok Sans' !important;
-    display: none !important;
+    display: none ;
 }
 
 .bar {
