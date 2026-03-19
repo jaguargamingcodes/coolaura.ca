@@ -365,7 +365,7 @@ b {
 }
 
 .gsc-results-wrapper-overlay:before {
-    content: "Cool Aura Search Engine"; 
+    content: "Cool Aura search engine by Emad"; 
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
     margin-bottom: 10px;
