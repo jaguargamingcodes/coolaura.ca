@@ -90,6 +90,11 @@ body {
     animation-name: search_color !important;
     backdrop-filter: blur(5px);
     font-family: 'Tiktok Sans' !important;
+    border: 4px solid transparent; 
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f); 
+    border-image-slice: 1; 
+    border-radius: 15px; 
+    padding: 10px 20px; 
 }
 
 input.gsc-input {
