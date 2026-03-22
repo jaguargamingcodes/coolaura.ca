@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(255, 255, 255);
     font-family: 'Tiktok Sans';
     align-self: center;
     align-content: center;
@@ -8,7 +8,7 @@ body {
 }
 
 #main {
-    font-size:200px;
+    font-size: 100px;
     font-family: monospace;
     font-weight: 100;
     color:rgb(255, 0, 0);
