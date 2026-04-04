@@ -125,7 +125,7 @@ input.gsc-input {
     outline: none !important;
     border: none !important;
     background-color: transparent !important;
-    color: white !important;
+    color: rgb(92, 48, 48) !important;
     justify-self: end !important;
     z-index: 100 !important;
     position: absolute !important;
@@ -343,7 +343,7 @@ button {
 }
 
 .gsc-modal-background-image, .gsc-modal-background-image-visible {
-    background-image: linear-gradient(rgba(21, 255, 0, 0.29), rgba(0, 0, 255, 0.293)) !important;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0,0,0)) !important;
 }
 
 .gcsc-branding-img-noclear {

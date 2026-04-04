@@ -19,6 +19,7 @@ function jump() {
     if (isjumping === true) return;  
     isjumping = true; 
     const player = document.getElementById('player')
+    player.style.rotate = '180deg'
     playerpositionY = 200; 
     player.style.bottom = playerpositionY + "px";
     setTimeout(function() {
