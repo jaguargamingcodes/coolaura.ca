@@ -305,14 +305,6 @@ button {
     background-color: #00ff0d3c;
 }
 
-.gs-title, .gs-title * {
-    font-family: 'Tiktok Sans', sans-serif !important;
-    font-size: 18px !important;
-    font-weight: bold !important;
-    color:rgb(255, 255, 255) !important;
-    background-color: rgba(57, 57, 57, 0.172) !important;
-    border-radius: 20px !important;
-}
 
 .gs-snippet {
     font-family: 'Tiktok Sans', sans-serif !important;
@@ -333,18 +325,11 @@ button {
     background-color: #ffffff35 !important;
 }
 
-.gs-title, .gs-title * {
-    font-weight: normal !important;
-    text-decoration: none !important;
-}
 
 .gsc-tabHeader, .gsc-inline-block, .gsc-tabhActive {
     border-radius: 30px;
 }
 
-.gsc-modal-background-image, .gsc-modal-background-image-visible {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0,0,0)) !important;
-}
 
 .gcsc-branding-img-noclear {
     display: none !important;
@@ -389,3 +374,28 @@ b {
     border-radius: 100px;
 }
 
+/* Customizing the overlay backdrop */
+.gsc-modal-background-image {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Darker, more dramatic overlay */
+    backdrop-filter: blur(5px); /* Adds a modern blur effect to the background */
+}
+
+/* Designing the results container */
+.gsc-results-wrapper-overlay {
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+    background: #ffffff !important;
+    padding: 20px !important;
+}
+
+/* Styling the result titles (Retro/Bold look) */
+.gs-title, .gs-title b {
+    color: #ff4500 !important; /* Bright orange for a pop-art feel */
+    font-family: 'Montserrat', sans-serif !important;
+    text-decoration: none !important;
+}
+
+/* Hiding unwanted elements for a cleaner UI */
+.gcsc-branding, .gsc-adBlock, .gsc-thumbnail {
+    display: none !important; /* Removes Google branding and ads for a cleaner look */
+}
