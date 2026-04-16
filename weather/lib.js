@@ -5,7 +5,11 @@ if(localStorage.getItem('lat') === null || localStorage.getItem('lon') === null)
    setLocation();
 }
 
-else {getSetMain}
+if(localStorage.getItem('lat') !== null || localStorage.getItem('lon') !== null) {
+   getSetMain();
+}
+
+
 
 function getSetMain() {
   fetch(`https://api.open-meteo.com/v1/forecast?latitude=${localStorage.getItem('lat')}&longitude=${localStorage.getItem('lon')}&current_weather=true`)
@@ -13,6 +17,7 @@ function getSetMain() {
     .then(d => document.getElementById("fc").innerHTML =
       d.current_weather.temperature + "°C"
     );
+    console.log('test')
 }
    
 
