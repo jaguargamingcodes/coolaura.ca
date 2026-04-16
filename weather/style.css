@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(0, 0, 0);
+    align-self: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    font-family: 'Tiktok Sans';
+    color: rgb(138, 200, 255);
+}
+
+#fc {
+    font-size: 10vh;
+    font-family: 'Audiowide';
+}
+
+#warning {
+    width: 30vw;
+    height: 40vh;
+    background-color: rgba(225, 255, 0, 0.206);
+    align-self: center;
+    position: absolute;
+    top: 30vh; left: 35%;
+    border-radius: 50px;;
+    color: rgb(234, 255, 0);
+}
+
+button {
+    cursor: pointer;
+}

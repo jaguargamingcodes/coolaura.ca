@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=TikTok+Sans:opsz,wdth,wght@12..36,99.9,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>coolaura weather</title>
   </head>
   <body>
+    <h1 id="fc">--° C</h1>
+    <div id="warning" style="display: none;">
+      <h1 id="wh">⚠️ WARNING</h1>
+      <p>You haven't saved latitude and longtitude coordinates;<br> without them, the weather app won't work.<br> Set them now for the app to work.<br> Click "save" to save coordinates.</p>
+      <p id="lat_id">Set Latitude:</p>
+      <input id="latVal">
+      <p id="lon_id">Set Longtitude:</p>
+      <input id="lonVal"><br><br>
+      <button id="submitter" onclick="saveLocation()">Save</button>
+    </div>
     <script src="lib.js"></script>
   </body>
 </html>
