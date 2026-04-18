@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=TikTok+Sans:opsz,wdth,wght@12..36,99.9,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <title>coolaura weather</title>
-  </head>
-  <body>
-    <h1 id="fc">--° C</h1>
-    <h1 id="flc">feels like --° C</h1>
-    <div id="warning" style="display: none;">
-      <h1 id="wh">⚠️ WARNING</h1>
-      <p>You haven't saved latitude and longtitude coordinates;<br> without them, the weather app won't work.<br> Set them now for the app to work.<br> Click "save" to save coordinates.</p>
-      <p id="lat_id">Set Latitude:</p>
-      <input id="latVal">
-      <p id="lon_id">Set Longtitude:</p>
-      <input id="lonVal"><br><br>
-      <button id="submitter" onclick="saveLocation()">Save</button>
+
+<head>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=TikTok+Sans:opsz,wdth,wght@12..36,99.9,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>coolaura weather</title>
+</head>
+
+<body>
+  <h1><span id="fc">--° C</span><span id="we"></span></h1>
+  <h1 id="flc">feels like --° C</h1>
+  <div id="fcont">
+    <div class="fw" id="12am">
+      <h1 id="12d">12am --° C</h1>
     </div>
-    <script src="lib.js"></script>
-  </body>
+    <div class="fw" id="1am">
+      <h1 id="1d">1am --° C</h1>
+    </div>
+    <div class="fw" id="2am">
+      <h1 id="2d">2am --° C</h1>
+    </div>
+    <div class="fw" id="3am">
+      <h1 id="3d">3am --° C</h1>
+    </div>
+    <div class="fw" id="4am">
+      <h1 id="4d">4am --° C</h1>
+    </div>
+    <div class="fw" id="5am">
+      <h1 id="5d">5am --° C</h1>
+    </div>
+    <div class="fw" id="6am">
+      <h1 id="6d">6am --° C</h1>
+    </div>
+    <div class="fw" id="7am">
+      <h1 id="7d">7am --° C</h1>
+    </div>
+    <div class="fw" id="8am">
+      <h1 id="8d">8am --° C</h1>
+    </div>
+    <div class="fw" id="9am">
+      <h1 id="9d">9am --° C</h1>
+    </div>
+  </div>
+  <div id="warning" style="display: none;">
+    <h1 id="wh">⚠️ WARNING</h1>
+    <p>You haven't saved latitude and longtitude coordinates;<br> without them, the weather app won't work.<br> Set them
+      now for the app to work.<br> Click "save" to save coordinates.</p>
+    <p id="lat_id">Set Latitude:</p>
+    <input id="latVal">
+    <p id="lon_id">Set Longtitude:</p>
+    <input id="lonVal"><br><br>
+    <button id="submitter" onclick="saveLocation()">Save</button>
+  </div>
+  <script src="lib.js"></script>
+</body>
+
 </html>
