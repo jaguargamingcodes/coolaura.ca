@@ -399,5 +399,5 @@ b {
 }
 
 .html-typing-effect {
-    display: none;
+    display: none !important;
 }
