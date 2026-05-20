@@ -20,3 +20,4 @@ let img = window.prompt('Set Wallpaper')
     document.getElementById('wallpaper_cont').style.backgroundImage = `url(${localStorage.getItem('wallpapersrc')})`
 
 
+document.getElementsByClassName('html-typing-effect')[0].style.display = 'none' 
