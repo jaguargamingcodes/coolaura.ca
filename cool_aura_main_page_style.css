@@ -397,3 +397,7 @@ b {
     opacity: 0 !important;
     transform: scale(0.95) !important;
 }
+
+.html-typing-effect {
+    display: none;
+}
