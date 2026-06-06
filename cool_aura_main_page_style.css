@@ -398,6 +398,12 @@ b {
     transform: scale(0.95) !important;
 }
 
-.html-typing-effect {
-    display: none !important;
+#searchbar {
+    width: 25vw;
+    height: 4vh;
+    border-radius: 5px;
+    padding-left: 40px;;
+    background-color: #00000079;
+    border: 2px solid rgba(255, 255, 255, 0.467);
+    color: white;
 }

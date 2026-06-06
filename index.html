@@ -23,7 +23,9 @@
       <div id="settingsMenu" onclick="this.style.display = 'none'">
     <span>Settings</span>
      <div class="bar"></div>
-     <button>nothing yet :)</button>
+     <button class='premium' onclick="localStorage.setItem('browser', 'chrome')">Chrome</button>
+     <button class='premium' onclick="localStorage.setItem('browser', 'duckgo')">DuckDuckGo</button>
+          <button onclick="localStorage.setItem('browser', 'coolaura')">coolaura</button>
   </div>
   </div>
   <div id="title_container">
@@ -36,6 +38,7 @@
   </div>
   <br><br><br>
   <div class="gcse-search" id="searchBox"></div>
+  <input type="text"  id="searchbar">
   <br>
   <br>
   <div id="shortCut">
@@ -60,7 +63,7 @@
 <script async src="https://cse.google.com/cse.js?cx=25a90f6a05eaf4e9b">
 </script>
   <script src='https://coolaura.ca/JSlibraries/Alert.js'></script>
-  <script src="lib.js"></script>
+    <script src="lib.js"></script>
 </body>
 
 </html>
