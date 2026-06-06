@@ -1,9 +1,23 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     if (localStorage.getItem('browser') !== 'coolaura') {
-        document.getElementById('searchBox').style.display = 'none !important';
+
+        const hideGoogleSearch = () => {
+            document.querySelectorAll('.gcse-search, .gsc-control-cse, .gsc-search-box')
+                .forEach(el => {
+                    el.style.setProperty('display', 'none', 'important');
+                });
+        };
+
+        // run immediately
+        hideGoogleSearch();
+
+        // keep checking for late injection (important for GCSE)
+        const interval = setInterval(hideGoogleSearch, 200);
+
+        // stop after 5 seconds (Google should be done by then)
+        setTimeout(() => clearInterval(interval), 5000);
     }
 });
-
 
 if (localStorage.getItem('browser') === null) {
     localStorage.setItem('browser', 'coolaura')
@@ -30,7 +44,7 @@ document.getElementById('wallpaper_cont').style.backgroundImage = `url(${localSt
 
 
 if (localStorage.getItem('browser') === 'coolaura') {
-     document.getElementById('searchbar').style.display = 'none'
+        document.getElementById('searchbar').style.display = 'none'
 }
 
 input = document.getElementById('searchbar')
@@ -56,4 +70,3 @@ function execute() {
     }
 
 }
-
