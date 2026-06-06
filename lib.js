@@ -8,13 +8,11 @@ window.addEventListener('load', () => {
                 });
         };
 
-        // run immediately
         hideGoogleSearch();
 
-        // keep checking for late injection (important for GCSE)
         const interval = setInterval(hideGoogleSearch, 200);
 
-        // stop after 5 seconds (Google should be done by then)
+
         setTimeout(() => clearInterval(interval), 5000);
     }
 });
