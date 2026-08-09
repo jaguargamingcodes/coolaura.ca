@@ -4,66 +4,21 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="cool_aura_main_page_style.css">
-  <link rel="icon" type="image/png" href="icon.png">
-  <title>Cool Aura -new tab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
+  <title>coolaura</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="wallpaper_cont">
-  <div id="topGap" style="height: 10vh;">
-    <button id="settings"
-      onclick="document.getElementById('settingsMenu').style.display = 'block'">⋮</button>
-      <div id="settingsMenu" onclick="this.style.display = 'none'">
-    <span>Settings</span>
-     <div class="bar"></div>
-     <button class='premium' onclick="localStorage.setItem('browser', 'chrome')">Chrome</button>
-     <button class='premium' onclick="localStorage.setItem('browser', 'duckgo')">DuckDuckGo</button>
-          <button onclick="localStorage.setItem('browser', 'coolaura')">coolaura</button>
+  <img src="logo.png" id="logo">
+  <div id="mainContainer">
+  <h1 id="slogan">
+    THE WEBSITE<br> TO DO EVERYTHING.
+  </h1>
   </div>
-  </div>
-  <div id="title_container">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <img src="logo.png">
-  </div>
-  <br><br><br><br>
-  <div>
-    <h1 id="subtitle_text">The website to do everything.</h1>
-  </div>
-  <br><br><br>
-  <div class="gcse-search" id="searchBox"></div>
-  <input type="text"  id="searchbar">
-  <br>
-  <br>
-  <div id="shortCut">
-  <a class="Links" href="https://coolaura.ca/Docs">docs</a>
-  <a class="Links" href="https://coolaura.ca/about">about</a>
-  </div>
-  <div id="results"></div>
-    <div id="panel" onclick="document.getElementById('panel').style.display = 'none';">
-    <div>
-      <h1>Theme:</h1>
-    </div>
-    <div class="themes c" id="redT" onclick="localStorage.setItem('theme',' rgb(64, 37, 37)')"></div>
-    <div class="themes c" id="blueT" onclick="localStorage.setItem('theme','rgb(0, 30, 100)')"></div>
-    <div class="themes c" id="greenT" onclick="localStorage.setItem('theme','rgb(16, 62, 16)')"></div>
-    <div class="themes c" id="blackT" onclick="localStorage.setItem('theme','rgb(19, 19, 19)')"></div>
-    <h1>Wallpaper</h1>
-    <button id="wpset" onclick="wallpaper()">SET</button>
-  </div>
-  <button id="customization_tools"
-    onclick="document.getElementById('panel').style.display = 'block'">✎customize</button>
-  </div>
-<script async src="https://cse.google.com/cse.js?cx=25a90f6a05eaf4e9b">
-</script>
-  <script src='https://coolaura.ca/JSlibraries/Alert.js'></script>
-    <script src="lib.js"></script>
+  <script src="lib.js"></script>
 </body>
 
 </html>
