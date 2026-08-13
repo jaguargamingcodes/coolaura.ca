@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg');
+    background-image: url(bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,11 +13,11 @@ body {
 }
 
 #logo {
-    width: 100px;
-    height: 20px;
+    width: 8vmin;
+    height: 1.6 vmin;
     position:fixed;
     top: 10px;
-    left: 30px;
+    left: 1.5vmin;
     float: left;
     vertical-align: top;
 }
@@ -31,7 +31,8 @@ body {
 #slogan {
     font-family: 'Cal Sans';
     line-height: 1.1;
-    color:rgba(33, 65, 87, 0.428);
+    color:rgb(179, 246, 255);
     font-weight: 100;
-    font-size: 3vw;
+    font-size: 7vmin;
+    
 }
