@@ -26,12 +26,12 @@ body {
     position: absolute;
     top: 20%;
     left: 2vw;
-    font-size: 3vw;
 }
 
 #slogan {
-    font-family: 'anton';
-    line-height: 1.2;
-    color:rgba(90, 90, 90, 0.428);
+    font-family: 'Cal Sans';
+    line-height: 1.1;
+    color:rgba(33, 65, 87, 0.428);
     font-weight: 100;
+    font-size: 3vw;
 }
