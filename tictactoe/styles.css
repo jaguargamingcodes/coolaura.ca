@@ -1,8 +1,13 @@
 body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     align-content: center;
     justify-content: center;
     justify-self: center;
     justify-items: center;
+    background-image: url('https://wallup.net/wp-content/uploads/2018/09/26/470253-abstract-art-colorful-colors-design-illustration-light-theme.jpg');
 }
 
 
@@ -11,7 +16,7 @@ body {
     top: 20%;
     width: 40vw;
     height: 40vw;
-    border: 3px solid black;
+    border: 4px solid rgba(255, 255, 255, 0.72);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -25,7 +30,7 @@ body {
 }
 
 .box {
-    border: 3px solid black;
+    border: 4px solid rgba(255, 255, 255, 0.72);
     border-radius: 0px;
     text-align: center;
     justify-content: center;
@@ -34,6 +39,7 @@ body {
     justify-self: center;
     justify-items: center;
     font-size: 10vw;
+    color:rgba(4, 4, 4, 0.364)
 }
 
 * {
