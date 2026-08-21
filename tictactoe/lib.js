@@ -13,8 +13,12 @@ PlayerState = 'P1'
 function swapPlayers() {
     if (PlayerState === 'P1') {
         PlayerState = 'P2'
+        document.getElementById('specifier').textContent = 'Player ○'
+        checkWinners()
     } else if (PlayerState === 'P2') {
         PlayerState = 'P1'
+        document.getElementById('specifier').textContent = 'Player ×'
+        checkWinners()
     }
 
     console.log('%c' + PlayerState + "'s turn", 'color: red; font-size: 30px;');
@@ -150,6 +154,115 @@ document.getElementById('b9').onclick = function () {
 }
 
 
+function checkWinners() {
+    if (
+
+        // x, possibility 1
+
+        document.getElementById('b1').textContent === x &&
+        document.getElementById('b2').textContent === x &&
+        document.getElementById('b3').textContent === x ||
+
+        // x, possibility 2
+
+        document.getElementById('b4').textContent === x &&
+        document.getElementById('b5').textContent === x &&
+        document.getElementById('b6').textContent === x ||
+
+        // x, possibility 3
+
+        document.getElementById('b7').textContent === x &&
+        document.getElementById('b8').textContent === x &&
+        document.getElementById('b9').textContent === x ||
+
+        // x, possibility 4
+
+        document.getElementById('b1').textContent === x &&
+        document.getElementById('b4').textContent === x &&
+        document.getElementById('b7').textContent === x ||
+
+        // x, possibility 5
+
+        document.getElementById('b2').textContent === x &&
+        document.getElementById('b5').textContent === x &&
+        document.getElementById('b8').textContent === x ||
+
+        // x, possibility 6
+
+        document.getElementById('b3').textContent === x &&
+        document.getElementById('b6').textContent === x &&
+        document.getElementById('b9').textContent === x ||
+
+        // x, possibility 7
+
+        document.getElementById('b1').textContent === x &&
+        document.getElementById('b5').textContent === x &&
+        document.getElementById('b9').textContent === x ||
+
+        // x, possibility 8
+
+        document.getElementById('b3').textContent === x &&
+        document.getElementById('b5').textContent === x &&
+        document.getElementById('b7').textContent === x
+    ) {
+        document.getElementById('turn').textContent = `PLAYER ${x} IS THE WINNER!`
+        setTimeout(function(){window.location.reload()}, 1000)
+    };
+
+    if (
+
+        // o, possibility 1
+
+        document.getElementById('b1').textContent === o &&
+        document.getElementById('b2').textContent === o &&
+        document.getElementById('b3').textContent === o ||
+
+        // o, possibility 2
+
+        document.getElementById('b4').textContent === o &&
+        document.getElementById('b5').textContent === o &&
+        document.getElementById('b6').textContent === o ||
+
+        // o, possibility 3
+
+        document.getElementById('b7').textContent === o &&
+        document.getElementById('b8').textContent === o &&
+        document.getElementById('b9').textContent === o ||
+
+        // o, possibility 4
+
+        document.getElementById('b1').textContent === o &&
+        document.getElementById('b4').textContent === o &&
+        document.getElementById('b7').textContent === o ||
+
+        // o, possibility 5
+
+        document.getElementById('b2').textContent === o &&
+        document.getElementById('b5').textContent === o &&
+        document.getElementById('b8').textContent === o ||
+
+        // o, possibility 6
+
+        document.getElementById('b3').textContent === o &&
+        document.getElementById('b6').textContent === o &&
+        document.getElementById('b9').textContent === o ||
+
+        // o, possibility 7
+
+        document.getElementById('b1').textContent === o &&
+        document.getElementById('b5').textContent === o &&
+        document.getElementById('b9').textContent === o ||
+
+        // o, possibility 8
+
+        document.getElementById('b3').textContent === o &&
+        document.getElementById('b5').textContent === o &&
+        document.getElementById('b7').textContent === o
+    ) {
+        document.getElementById('turn').textContent = `PLAYER ${o} IS THE WINNER!`
+        setTimeout(function(){window.location.reload()}, 1000)
+    };
+}
 
 
 

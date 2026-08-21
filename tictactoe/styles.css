@@ -8,6 +8,7 @@ body {
     justify-self: center;
     justify-items: center;
     background-image: url('https://wallup.net/wp-content/uploads/2018/09/26/470253-abstract-art-colorful-colors-design-illustration-light-theme.jpg');
+    font-family: monospace;
 }
 
 
@@ -22,8 +23,8 @@ body {
     grid-template-rows: repeat(3, 1fr);
     gap: 0;
     border-radius: 10px;
-    max-height: 50vmin;   
-    max-width: 50vmin; 
+    max-height: 50vmin;
+    max-width: 50vmin;
 }
 
 #gameboard>.box {
@@ -41,7 +42,7 @@ body {
     justify-self: center;
     justify-items: center;
     font-size: 9vmin;
-    color:rgba(4, 4, 4, 0.364);
+    color: rgba(4, 4, 4, 0.364);
     height: fit-content;
     width: fit-content;
 }
@@ -51,4 +52,18 @@ body {
     margin: 0;
     padding: 0;
     user-select: none;
+}
+
+#topSpace {
+    height: 7vmin;
+    width: 100vw;
+}
+
+#turn {
+    font-size: 3vmin;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+#specifier {
+    color:rgba(4, 4, 4, 0.364);
 }
