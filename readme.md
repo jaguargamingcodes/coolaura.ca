@@ -4,6 +4,6 @@
  ## VER 1.1: fixed viewport sizing, background, font, and color!
  ## VER 1.2: tic tac toe project...
  ## VER 1.3: tic tac toe proj almost completed! and coolaura layout fixed, more fluid, glassy, and interactive!
- ## VER 1.4: fixed moving gradient background.
+ ## VER 1.4: fixed gradient background.
  ### Stay Tuned!
  ##### Peace out.
