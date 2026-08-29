@@ -1,15 +1,18 @@
 async function sendPrompt() {
-    const inp = document.getElementById('tInput');
-    const res = document.getElementById('response');
+    const inp = document.getElementById('tInput'), res = document.getElementById('response');
     if (!inp || !res) return;
 
     const txt = inp.value.trim();
     if (!txt) return;
 
-    const key = localStorage.getItem("or_key");
+    let key = localStorage.getItem("or_key");
     if (!key) {
-        res.textContent = "Error: Key missing. Run localStorage.setItem('or_key', 'YOUR_KEY') in your browser console first.";
-        return;
+        key = prompt("Please paste your OpenRouter API Key (sk-or-...) to use the AI features on this site:");
+        if (!key) {
+            res.textContent = "Error: An API key is required to send prompts.";
+            return;
+        }
+        localStorage.setItem("or_key", key.trim());
     }
 
     res.textContent = "Thinking...";
@@ -48,3 +51,4 @@ document.getElementById('tInput')?.addEventListener("keydown", function(e) {
         sendPrompt();
     }
 });
+
