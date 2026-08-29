@@ -51,4 +51,3 @@ document.getElementById('tInput')?.addEventListener("keydown", function(e) {
         sendPrompt();
     }
 });
-
