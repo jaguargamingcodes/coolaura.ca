@@ -22,6 +22,7 @@ body {
     animation-name: bg;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    overflow: hidden;
 }
 
 @keyframes bg {
@@ -209,19 +210,24 @@ body {
     background-color: rgba(0, 0, 0, 0.45);
     z-index: 100000000;
     inset: 0;
-    position: absolute;
     justify-self: right;
     justify-items: right;
     font-family: "Cal sans";
     font-weight: 100;
     color: rgba(255, 255, 255, 0.659);
     display: none;
+    opacity: 0;
+    transition: opacity .5s;
+    padding: 5vmin 5vmin 0 0;
+
 }
 
+
+
 #SettingsTitle {
-    position: relative;
+    margin: 0;
     letter-spacing: .7vmin;
-    right: 3vmin;
+    font-size: 4vmin;
 }
 
 #bar1 {
@@ -230,20 +236,68 @@ body {
     width: 30vmin;
     background-color: rgba(255, 255, 255, 0.48);
     border-radius: 100px;
-    top: 8vmin;
+    opacity: 0;
+    transition: opacity .5s;
+    margin-top: -.2vmin;
 }
 
 .ops1 {
-    position: absolute;
-    right: 3vmin;
-    top: 9vmin;
+    opacity: 0;
+    transition: opacity .5s;
+    display: block;
+    margin-right: 1vmin;
 }
 
 .bar {
-    position: absolute;
     height: 0.3vmin;
     width: 30vmin;
     background-color: rgba(255, 255, 255, 0.48);
     border-radius: 100px;
-    right: 3vmin;
+    opacity: 0;
+    transition: opacity .5s;
 }
+
+.optionButtons {
+    float: right;
+    height: 1.7vmin;
+    padding: .01vmin;
+    width: 7vmin;
+    border: none;
+    border-radius: 1000px;
+    background-color: rgba(255, 255, 255, 0.358);
+    color: rgba(255, 255, 255, 0.597);
+    font-family: 'Cal Sans';
+    text-align: center;
+    font-size: 1.3vmin;
+    transition: background-color .5s, box-shadow .5s, backdrop-fliter .5s;
+    margin-left: .5vmin;
+}
+
+.optionButtons:hover {
+    background-color: rgba(240, 248, 255, 0.181);
+    cursor: pointer;
+    box-shadow:
+        0 0 2px white,
+        0 0 4px rgba(255, 255, 255, 0.816),
+        0 0 6px rgba(255, 255, 255, 0.706),
+        0 0 8px rgba(255, 255, 255, 0.494),
+        0 0 10px rgba(255, 255, 255, 0.396),
+        0 0 12px rgba(255, 255, 255, 0.246),
+        0 0 14px rgba(255, 255, 255, 0.137),
+        0 0 16px rgba(255, 255, 255, 0.027);
+}
+
+
+#sp1 {
+    margin: -1.2min;
+    font-size: 2vmin;
+}
+
+#seGoogleSearch {
+    margin-right: 1vmin;
+}
+
+#seDuckduckgo {
+    width: 10vmin;
+}
+
