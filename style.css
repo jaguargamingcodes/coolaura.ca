@@ -98,7 +98,7 @@ body {
     display: flex;
     width: 53vmin;
     height: 4vmin;
-    background-color: rgba(240, 248, 255, 0.558);
+    background-color: rgba(255, 255, 255, 0.558);
     border-radius: 70vmin;
     border: 0.3vmin solid rgba(255, 255, 255, 0.621);
     animation-name: bar;
@@ -128,7 +128,7 @@ body {
 @keyframes bar {
     from {
         width: 0vmin;
-        background-color: aliceblue;
+        background-color: white;
         opacity: 0;
     }
 
@@ -171,4 +171,79 @@ body {
     color: rgba(240, 248, 255, 0.615);
     animation: searchI 1s;
     animation-delay: 1s;
+}
+
+#menu {
+    position: fixed;
+    top: 1vmin;
+    right: 1.5vmin;
+    float: right;
+    vertical-align: top;
+    border: none;
+    border-radius: 50px;
+    width: 2vmin;
+    height: 3.3vmin;
+    font-size: 2vmin;
+    background-color: transparent;
+    color: white;
+    transition: background-color .5s, box-shadow .5s, backdrop-fliter .5s;
+}
+
+#menu:hover {
+    background-color: rgba(240, 248, 255, 0.427);
+    cursor: pointer;
+    box-shadow:
+        0 0 2px white,
+        0 0 4px rgba(255, 255, 255, 0.816),
+        0 0 6px rgba(255, 255, 255, 0.706),
+        0 0 8px rgba(255, 255, 255, 0.494),
+        0 0 10px rgba(255, 255, 255, 0.396),
+        0 0 12px rgba(255, 255, 255, 0.246),
+        0 0 14px rgba(255, 255, 255, 0.137),
+        0 0 16px rgba(255, 255, 255, 0.027);
+}
+
+#Overlay1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 100000000;
+    inset: 0;
+    position: absolute;
+    justify-self: right;
+    justify-items: right;
+    font-family: "Cal sans";
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.659);
+    display: none;
+}
+
+#SettingsTitle {
+    position: relative;
+    letter-spacing: .7vmin;
+    right: 3vmin;
+}
+
+#bar1 {
+    position: absolute;
+    height: 0.3vmin;
+    width: 30vmin;
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 100px;
+    top: 8vmin;
+}
+
+.ops1 {
+    position: absolute;
+    right: 3vmin;
+    top: 9vmin;
+}
+
+.bar {
+    position: absolute;
+    height: 0.3vmin;
+    width: 30vmin;
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 100px;
+    right: 3vmin;
 }
