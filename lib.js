@@ -34,3 +34,6 @@ function showCustomizations() {
   }, 10);
 }
 
+alert(
+  "IMPORTANT NOTICE: \n \n This website is under construction; most of the features might be broken and unusable. Please be patient, this website will be functional in 1-2 months"
+)
