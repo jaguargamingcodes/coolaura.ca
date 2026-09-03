@@ -14,7 +14,15 @@
 </head>
 
 <body>
-  <div id="Overlay1">
+  <button id="customize" onclick="showCustomizations()">ᝰ</button>
+  <div id="Overlay2">
+    <h1 id="customizationTitle">Customize:</h1>
+    <div class="bar" id="bar2"></div>
+    <span class="ops2" id="2sp1">Set wallpaper:</span>
+    <input type="text" id="wpset" placeholder="Image link">
+    <button id="wpsetter">✓</button>
+  </div>
+  <div id="Overlay1" onclick="hideOptions()">
     <h1 id="SettingsTitle">Options:</h1>
     <div class="bar" id="bar1"></div>
     <span class="ops1" id="sp1">Search engine:</span>

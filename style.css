@@ -78,6 +78,14 @@ body {
     font-size: 1.7vmin;
     font-family: 'Baumans';
     color: white;
+    text-shadow: 0 0 1px white,
+        0 0 2px rgba(255, 255, 255, 0.816),
+        0 0 3px rgba(255, 255, 255, 0.706),
+        0 0 4px rgba(255, 255, 255, 0.494),
+        0 0 5px rgba(255, 255, 255, 0.396),
+        0 0 6px rgba(255, 255, 255, 0.246),
+        0 0 7px rgba(255, 255, 255, 0.137),
+        0 0 8px rgba(255, 255, 255, 0.027);
 }
 
 #slogan:hover {
@@ -182,7 +190,7 @@ body {
     vertical-align: top;
     border: none;
     border-radius: 50px;
-    width: 2vmin;
+    width: 3.3vmin;
     height: 3.3vmin;
     font-size: 2vmin;
     background-color: transparent;
@@ -219,7 +227,24 @@ body {
     opacity: 0;
     transition: opacity .5s;
     padding: 5vmin 5vmin 0 0;
+}
 
+#Overlay2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 100000000;
+    inset: 0;
+    justify-self: right;
+    justify-items: right;
+    font-family: "Cal sans";
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.659);
+    transition: opacity .5s;
+    padding: 5vmin 5vmin 0 0;
+    position: fixed;
+    display: none;
+    opacity: 0;
 }
 
 
@@ -253,7 +278,6 @@ body {
     width: 30vmin;
     background-color: rgba(255, 255, 255, 0.48);
     border-radius: 100px;
-    opacity: 0;
     transition: opacity .5s;
 }
 
@@ -301,3 +325,71 @@ body {
     width: 10vmin;
 }
 
+#customize {
+    position: fixed;
+    bottom: 1vmin;
+    right: 2vmin;
+    float: right;
+    vertical-align: bottom;
+    border: none;
+    border-radius: 50px;
+    width: 3.3vmin;
+    height: 3.3vmin;
+    font-size: 2vmin;
+    background-color: transparent;
+    color: white;
+    transition: background-color .5s, box-shadow .5s, backdrop-fliter .5s;
+}
+
+#customize:hover {
+    background-color: rgba(240, 248, 255, 0.181);
+    cursor: pointer;
+    box-shadow:
+        0 0 2px white,
+        0 0 4px rgba(255, 255, 255, 0.816),
+        0 0 6px rgba(255, 255, 255, 0.706),
+        0 0 8px rgba(255, 255, 255, 0.494),
+        0 0 10px rgba(255, 255, 255, 0.396),
+        0 0 12px rgba(255, 255, 255, 0.246),
+        0 0 14px rgba(255, 255, 255, 0.137),
+        0 0 16px rgba(255, 255, 255, 0.027);
+}
+
+#2sp1 {
+    margin: -1.2min;
+    font-size: 2vmin;
+}
+
+.ops2 {
+    transition: opacity .5s;
+    display: block;
+    margin-right: 1vmin;
+}
+
+#customizationTitle {
+    margin: 0;
+    letter-spacing: .7vmin;
+    font-size: 4vmin;
+}
+
+#wpset {
+    float: right;
+    border-radius: 100vmin;
+    border: 0.2vmin solid rgba(255, 255, 255, 0.349);
+    background-color: rgba(255, 255, 255, 0.354);
+    outline: none;
+    font-family: "baumans";
+    width: 20vmin;
+    height: 1.5vmin;
+    color: white;
+    font-size: 1.7vmin;
+}
+
+#wpsetter {
+    border: none;
+    border-radius: 10000px;
+    background-color: #ffffff3f;
+    color: white;
+    float: right;
+    margin-right: .5VMIN;
+}
