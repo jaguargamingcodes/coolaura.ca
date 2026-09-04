@@ -84,7 +84,7 @@ query.addEventListener("keydown", function(event) {
   }
 })
 
-function setGooogle() {
+function setGoogle() {
   localStorage.setItem('se', 'GOOGLE')
 }
 
