@@ -1,3 +1,10 @@
+if(localStorage.getItem('wallpaper') == null || localStorage.getItem('wallpaper') == "" ) {
+} else {
+  document.body.style.backgroundImage = `url(${localStorage.getItem('wallpaper')})`
+  document.body.style.animation = 'none'
+  document.body.style.backgroundSize = "cover"
+}
+
 function showOptions() {
   const overlay = document.getElementById('Overlay1');
   overlay.style.display = 'block';
@@ -37,3 +44,8 @@ function showCustomizations() {
 alert(
   "IMPORTANT NOTICE: \n \n This website is under construction; most of the features might be broken and unusable. Please be patient, this website will be functional in 1-2 months"
 )
+
+function changeWallpaper(){
+  localStorage.setItem('wallpaper', document.getElementById('wpset').value)
+  document.body.style.backgroundImage = `url(${localStorage.getItem('wallpaper')})`
+}
