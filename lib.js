@@ -61,7 +61,7 @@ function showCustomizations() {
 }
 
 alert(
-  "IMPORTANT NOTICE: \n \n This website is under construction; most of the features might be broken and unusable. Please be patient, this website will be functional in 1-2 months"
+  "IMPORTANT NOTICE: \n \n This website is under construction; most of the features might be broken and unusable. Please be patient, this update wil take 1-2 months."
 )
 
 function changeWallpaper(){
@@ -84,3 +84,10 @@ query.addEventListener("keydown", function(event) {
   }
 })
 
+function setGooogle() {
+  localStorage.setItem('se', 'GOOGLE')
+}
+
+function setDuckGo() {
+  localStorage.setItem('se', 'DUCKDUCKGO')
+}
