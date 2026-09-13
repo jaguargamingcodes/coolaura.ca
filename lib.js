@@ -1,10 +1,11 @@
 const query = document.getElementById('tInput')
+const jumpscare = new Audio('jumpscare.mp3')
 
-if(localStorage.getItem('se') == null) {
+if (localStorage.getItem('se') == null) {
   localStorage.setItem('se', 'GOOGLE')
 }
 
-if(localStorage.getItem('wallpaper') == null || localStorage.getItem('wallpaper') == "" ) {
+if (localStorage.getItem('wallpaper') == null || localStorage.getItem('wallpaper') == "") {
 } else {
   document.body.style.backgroundImage = `url(${localStorage.getItem('wallpaper')})`
   document.body.style.animation = 'none'
@@ -64,21 +65,21 @@ alert(
   "IMPORTANT NOTICE: \n \n This website is under construction; most of the features might be broken and unusable. Please be patient, this update wil take 1-2 months."
 )
 
-function changeWallpaper(){
+function changeWallpaper() {
   localStorage.setItem('wallpaper', document.getElementById('wpset').value)
   document.body.style.backgroundImage = `url(${localStorage.getItem('wallpaper')})`
 }
 
 function search() {
-  if(localStorage.getItem('se') === 'GOOGLE') {
+  if (localStorage.getItem('se') === 'GOOGLE') {
     window.location.href = `https://google.com/search?q=${query.value}`;
-  } else if(localStorage.getItem('se') === 'DUCKDUCKGO') {
+  } else if (localStorage.getItem('se') === 'DUCKDUCKGO') {
     window.location.href = `https://duckduckgo.com/?ai=web&q=${query.value}`;
   }
 }
 
-query.addEventListener("keydown", function(event) {
-  if(event.key === "Enter") {
+query.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
     event.preventDefault();
     search();
   }
@@ -90,4 +91,14 @@ function setGoogle() {
 
 function setDuckGo() {
   localStorage.setItem('se', 'DUCKDUCKGO')
+}
+
+function jumpscar() {
+  document.body.style.backgroundImage = 'url(https://i.imgur.com/ymX61qk.gif)'
+  setTimeout(function(){body.style.backgroundImage = ''}, 3000)
+  jumpscare.play()
+}
+
+function TimeJumpscare() {
+  setTimeout(jumpscar, 1)
 }
