@@ -94,8 +94,8 @@ function setDuckGo() {
 }
 
 function jumpscar() {
-  document.body.style.backgroundImage = 'url(https://i.imgur.com/ymX61qk.gif)'
-  setTimeout(function(){body.style.backgroundImage = ''}, 3000)
+  document.body.style.backgroundImage = 'url(jscr.gif)'
+  setTimeout(function(){document.body.style.backgroundImage = ''}, 3000)
   jumpscare.play()
 }
 
