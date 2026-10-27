@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-     <meta charset="UTF-8">
-     <title>New Tab</title>
-     <link rel="stylesheet" href="style.css"> 
-     <link rel="icon" href="favicon.png">
-  </head>
-  <body>
-    <div id="main_container">
-      <img src="logo.png" id="logo">
-      <div id="searchbar">
-        <input id="search_input" placeholder="Search coolaura" type="text">
-        <button id="search">
-            <img id="sIcon" src="Search_icon.png">
-        </button>
-      </div>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+  <div id="main_container">
+    <img src="logo.png" id="logo">
+    <p id="slogan">A new searching experience.</p>
+    <div id="searchbar">
+      <input id="search_input" placeholder="Search coolaura..." type="text">
+      <button id="search">
+        <img id="sIcon" src="Search_icon.png">
+      </button>
     </div>
-    <script src="lib.js">
-    </script>
-  </body>
+    <div id="gap"></div>
+    <div id="engine_container">
+      <img class="searchimgs" src="logoG.png">
+      <div class="bar"></div>
+      <img id="bing" class="searchimgs" src="logoB.png">
+      <div class="bar"></div>
+      <img class="searchimgs" src="logoY.png">
+      <div class="bar"></div>
+      <img id="yandex" class="searchimgs" src="logoYX.png">
+      <div class="bar"></div>
+      <img class="searchimgs" src="logoD.png">
+      <div class="bar"></div>
+      <img id="moreEngines" class="searchimgs" src="moreEngines.png">
+    </div>
+  </div>
+  <script src="lib.js">
+  </script>
+</body>
+
 </html>

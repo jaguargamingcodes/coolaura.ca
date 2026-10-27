@@ -1,17 +1,31 @@
 #logo {
-    width: 60vmin;
-    height: 10min;
+    width: 50vmin;
+    height: 8min;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#gap {
+    height: 4vmin;
+    ;
 }
 
 #main_container {
-    position: absolute;
-    top: 30vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    top: 20vh;
+    align-content: center;
+    align-self: center;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     user-select: none;
+    text-align: center;
 }
 
 body {
@@ -19,46 +33,118 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-image: linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255), rgb(255, 199, 219));
+    align-content: center;
+    align-self: center;
 }
 
 #searchbar {
+    border: 3px solid rgba(255, 255, 255, 0.259);
     width: 80vmin;
-    height: 4vmin;
-    background-color:rgba(150, 150, 150, 0.3);
+    height: 7vmin;
+    background-color: rgba(230, 237, 255, 0.851);
     padding: 1px;
     border-radius: 100vmin;
     align-items: center;
     justify-content: center;
     display: flex;
     position: relative;
+    box-shadow: 0px 10px 10px -3px rgba(132, 132, 132, 0.2);
 }
 
 #search_input {
+    padding-left: 2vmin;
     width: 70vmin;
-    height: 3vmin; 
+    height: 3vmin;
     position: absolute;
     left: 1.5vmin;
     outline: none;
     border: none;
     font-size: 2.5vmin;
     background-color: transparent;
-    background-image: linear-gradient(to right, red,rgb(198, 0, 252), blue , aqua,  rgb(0, 253, 0) );
+    background-image: linear-gradient(to right, rgb(131, 0, 0), rgb(116, 0, 148), rgb(0, 0, 144), rgb(0, 142, 142), rgb(0, 140, 0));
     background-clip: text;
     color: transparent;
     caret-color: #333;
+    font-family: "Coolaura";
+    font-family: "Didact Gothic";
 }
 
 #search {
-    width: 3.5vmin;
-    height: 3.5vmin;
+    width: 6.5vmin;
+    height: 6.5vmin;
     border-radius: 100vmin;
     border: none;
     position: absolute;
     right: 0.5vmin;
-    background-color: white;
+    background-color: rgba(255, 254, 254, 0.439);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }
 
 #sIcon {
-    width: 2vmin; 
-    height: 2vmin;
+    width: 3vmin;
+    height: 3vmin;
+    position: absolute;
+    top: 1.7vmin;
+    right: 1.7vmin;
+}
+
+
+@font-face {
+    font-family: "Coolaura";
+    src: url("Coolaura.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+#slogan {
+    font-family: "Didact Gothic";
+    font-size: 2.5vmin;
+    color: rgba(0, 0, 0, 0.486);
+}
+
+#engine_container {
+    width: 60vmin;
+    height: 8vmin;
+    background-color: rgba(230, 237, 255, 0.556);
+    padding: 1px;
+    border-radius: 100vmin;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 10px 10px -3px rgba(132, 132, 132, 0.2);
+    align-self: center;
+    gap: 2vmin;
+}
+
+.searchimgs {
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.bar {
+    height: 6vmin;
+    width: 0.3vmin;
+    background-color: #3333332d;
+    border-radius: 100vmin;
+}
+
+#bing {
+    width: 7.5vmin !important;
+    height: 7.5vmin !important;
+}
+
+#yandex {
+    width: 4vmin !important;
+    height: 4vmin !important;
+}
+
+#moreEngines {
+    width: 3vmin !important;
+    height: 3vmin !important;
 }
