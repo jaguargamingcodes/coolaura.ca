@@ -14,7 +14,7 @@
 <body>
   <div id="main_container">
     <img src="logo.png" id="logo">
-    <p id="slogan">A new searching experience.</p>
+    <p id="slogan">One search. Many engines.</p>
     <div id="searchbar">
       <input id="search_input" placeholder="Search coolaura..." type="text">
       <button id="search">
@@ -23,17 +23,12 @@
     </div>
     <div id="gap"></div>
     <div id="engine_container">
-      <img class="searchimgs" src="logoG.png">
+      <img id="theme" class="searchimgs" onclick="toggleTheme()" src="themeL.png">
       <div class="bar"></div>
-      <img id="bing" class="searchimgs" src="logoB.png">
+      <img id="wallpaper" class="searchimgs" onclick="setWP()" src="WPicon.png">
       <div class="bar"></div>
-      <img class="searchimgs" src="logoY.png">
+      <img id="info" class="searchimgs" onclick="i()" src="info.png">
       <div class="bar"></div>
-      <img id="yandex" class="searchimgs" src="logoYX.png">
-      <div class="bar"></div>
-      <img class="searchimgs" src="logoD.png">
-      <div class="bar"></div>
-      <img id="moreEngines" class="searchimgs" src="more.png">
     </div>
   </div>
   <script src="lib.js">
