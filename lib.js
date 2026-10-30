@@ -42,3 +42,19 @@ function setWP() {
 
 checkWallpaper()
 checkTheme()
+checkPalette()
+
+function checkPalette() {
+    if(localStorage.getItem('hue') !== null) {
+        document.documentElement.style.filter = `hue-rotate(${localStorage.getItem('hue')}deg)`
+    }
+    console.log('hello')
+}
+
+function setPalette() {
+    let hue = window.prompt('Set Color Degree Number (custom theme)')
+    if(hue !== null) {
+        localStorage.setItem('hue', hue)
+    }
+    checkPalette();
+}

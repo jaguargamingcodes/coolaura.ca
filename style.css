@@ -19,6 +19,10 @@
     align-self: center;
 }
 
+html {
+    min-height: 100vh;
+}
+
 html,
 body {
     height: 100%;
@@ -39,6 +43,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 #searchbar {
