@@ -1,3 +1,8 @@
+if (localStorage.getItem('Search Engine') === null) {
+    localStorage.setItem('Search Engine', 'Google')
+}
+
+
 function checkTheme() {
     if (localStorage.getItem('theme') === null) {
         localStorage.setItem('theme', 'light')
@@ -17,24 +22,25 @@ function checkTheme() {
 
 
 function toggleTheme() {
+
     if (localStorage.getItem('theme') === 'light') {
         localStorage.setItem('theme', 'dark')
-    }  else if (localStorage.getItem('theme') === 'dark') {
+    } else if (localStorage.getItem('theme') === 'dark') {
         localStorage.setItem('theme', 'light')
     }
     checkTheme();
 }
 
 function checkWallpaper() {
-    if(localStorage.getItem('wallpaper') !== null) {
+    if (localStorage.getItem('wallpaper') !== null) {
         document.body.style.backgroundImage = `url(${localStorage.getItem('wallpaper')}`
     }
-  
+
 }
 
 function setWP() {
     let wallpaper = window.prompt('Please enter Wallpaper link (Image Adress).')
-    if(wallpaper !== null) {
+    if (wallpaper !== null) {
         localStorage.setItem('wallpaper', wallpaper)
     }
     checkWallpaper();
@@ -45,7 +51,7 @@ checkTheme()
 checkPalette()
 
 function checkPalette() {
-    if(localStorage.getItem('hue') !== null) {
+    if (localStorage.getItem('hue') !== null) {
         document.documentElement.style.filter = `hue-rotate(${localStorage.getItem('hue')}deg)`
     }
     console.log('hello')
@@ -53,8 +59,47 @@ function checkPalette() {
 
 function setPalette() {
     let hue = window.prompt('Set Color Degree Number (custom theme)')
-    if(hue !== null) {
+    if (hue !== null) {
         localStorage.setItem('hue', hue)
     }
     checkPalette();
+}
+
+function Google() {
+    localStorage.setItem('Search Engine', 'Google')
+}
+
+function Duck() {
+    localStorage.setItem('Search Engine', 'Duckduckgo')
+}
+
+function Bing() {
+    localStorage.setItem('Search Engine', 'Bing')
+}
+
+function Yahoo() {
+    localStorage.setItem('Search Engine', 'Yahoo!')
+}
+
+function Yandex() {
+    localStorage.setItem('Search Engine', 'Yandex')
+}
+
+function search() {
+    let query = document.getElementById('search_input').value
+    if (query.includes('https://') || query.includes('.')) {
+        document.location = query
+    }
+
+    if (localStorage.getItem('Search Engine') == 'Google') {
+        window.location = `google.com/search?q=${query}`
+    } else if (localStorage.getItem('Search Engine') == 'Duckduckgo') {
+        window.location = `duckduckgo.com/?q=${query}`
+    } else if (localStorage.getItem('Search Engine') == 'Bing') {
+        window.location = `bing.com/search?q=${query}`
+    } else if (localStorage.getItem('Search Engine') == 'Yahoo!') {
+        window.location = `yahoo.com/search?p=${query}`
+    } else if (localStorage.getItem('Search Engine') == 'Yandex') {
+        window.location = `yandex.com/search?text=${query}`
+    }
 }

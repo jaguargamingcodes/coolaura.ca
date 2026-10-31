@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-#gap {
+.gap {
     height: 4vmin;
 }
 
@@ -29,6 +29,8 @@ body {
     margin: 0;
     user-select: none;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 body {
@@ -44,6 +46,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    transition: background-image 1s;
 }
 
 #searchbar {
@@ -74,7 +77,6 @@ body {
     background-clip: text;
     color: transparent;
     caret-color: #333;
-    font-family: "Coolaura";
     font-family: "Didact Gothic";
 }
 
@@ -112,7 +114,7 @@ body {
 #slogan {
     font-family: "Didact Gothic";
     font-size: 2.5vmin;
-    color: rgba(73, 141, 147, 0.486);
+    color: rgba(73, 147, 135, 0.764);
 }
 
 #engine_container {
@@ -133,6 +135,7 @@ body {
 .searchimgs {
     width: 5vmin;
     height: 5vmin;
+    cursor: pointer;
 }
 
 .bar {
@@ -140,5 +143,22 @@ body {
     width: 0.3vmin;
     background-color: #3333332d;
     border-radius: 100vmin;
+}
+
+
+.Selectors {
+    display: inline-block !important;
+    font-weight: bold;
+    font-size: 3vmin;
+    color: rgba(73, 147, 144, 0.456);
+    margin-top: 2vmin;
+    font-family: 'Didact Gothic';
+    margin-left: 1vmin;
+    margin-right: 1vmin;
+    cursor: pointer;
+}
+
+#selectorContainer {
+    display: inline-block !important;
 }
 

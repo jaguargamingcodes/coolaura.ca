@@ -17,11 +17,11 @@
     <p id="slogan">One search. Many engines.</p>
     <div id="searchbar">
       <input id="search_input" placeholder="Search coolaura..." type="text">
-      <button id="search">
+      <button onclick="search()" id="search">
         <img id="sIcon" src="Search_icon.png">
       </button>
     </div>
-    <div id="gap"></div>
+    <div class="gap"></div>
     <div id="engine_container">
       <img id="theme" class="searchimgs" onclick="toggleTheme()" src="themeL.png">
       <div class="bar"></div>
@@ -31,6 +31,13 @@
       <div class="bar"></div>
       <img id="info" class="searchimgs" onclick="setPalette()" src="palette.png">
       <div class="bar"></div>
+    </div>
+    <div id="SelectorContainer">
+      <span onclick="Google()" class="Selectors" id="google">Google</span>
+      <span onclick="Duck()" class="Selectors" id="Duckduckgo">Duckduckgo</span>
+      <span onclick="Bing()" class="Selectors" id="Bing">Bing</span>
+      <span onclick="Yahoo()" class="Selectors" id="Yahoo!">Yahoo!</span>
+      <span onclick="Yandex()" class="Selectors" id="Yandex">Yandex</span>
     </div>
   </div>
   <script src="lib.js">
