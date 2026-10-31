@@ -92,14 +92,14 @@ function search() {
     }
 
     if (localStorage.getItem('Search Engine') == 'Google') {
-        window.location = `google.com/search?q=${query}`
+        window.location = `https://google.com/search?q=${query}`
     } else if (localStorage.getItem('Search Engine') == 'Duckduckgo') {
-        window.location = `duckduckgo.com/?q=${query}`
+        window.location = `https://duckduckgo.com/?q=${query}`
     } else if (localStorage.getItem('Search Engine') == 'Bing') {
-        window.location = `bing.com/search?q=${query}`
+        window.location = `https://bing.com/search?q=${query}`
     } else if (localStorage.getItem('Search Engine') == 'Yahoo!') {
-        window.location = `yahoo.com/search?p=${query}`
+        window.location = `https://yahoo.com/search?p=${query}`
     } else if (localStorage.getItem('Search Engine') == 'Yandex') {
-        window.location = `yandex.com/search?text=${query}`
+        window.location = `https://yandex.com/search?text=${query}`
     }
 }
