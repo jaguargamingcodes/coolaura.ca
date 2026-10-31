@@ -107,7 +107,7 @@ function search() {
 document.getElementById('search_input').addEventListener('keydown', (event) => {
     if (event.key === "Enter") {
         event.preventDefault()
-        search();
+        search()
     }
 }
     

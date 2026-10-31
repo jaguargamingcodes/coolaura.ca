@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(404.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#Header {
+    font-family: 'Didact Gothic';
+    color: rgba(0, 0, 0, 0.799);
+    position: absolute;
+    top:50vh;
+    font-size:9vmin;
+    color: rgba(0, 0, 0, 0.799);
+    text-shadow: .3vmin .3vmin rgb(255, 255, 255);
+}
+
+#title {
+    font-family: 'Didact Gothic';
+    color: rgba(77, 0, 0, 0.799);
+    text-shadow: .3vmin .3vmin rgb(255, 2, 2);
+    position: absolute;
+    top: 40vh;
+    font-size: 30vmin;
+}
