@@ -103,3 +103,12 @@ function search() {
         window.location = `https://yandex.com/search?text=${query}`
     }
 }
+
+document.getElementById('search_input').addEventListener('keydown', (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault()
+        search();
+    }
+}
+    
+)
