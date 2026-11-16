@@ -2,7 +2,6 @@ if (localStorage.getItem('Search Engine') === null) {
     localStorage.setItem('Search Engine', 'Google')
 }
 
-
 function checkTheme() {
     if (localStorage.getItem('theme') === null) {
         localStorage.setItem('theme', 'light')
@@ -18,8 +17,6 @@ function checkTheme() {
         document.body.style.backgroundImage = 'linear-gradient(45deg, rgb(26, 41, 26), rgb(22, 22, 42))'
     }
 }
-
-
 
 function toggleTheme() {
 
@@ -54,7 +51,6 @@ function checkPalette() {
     if (localStorage.getItem('hue') !== null) {
         document.documentElement.style.filter = `hue-rotate(${localStorage.getItem('hue')}deg)`
     }
-    console.log('hello')
 }
 
 function setPalette() {
