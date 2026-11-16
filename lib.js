@@ -125,5 +125,3 @@ searchInput.addEventListener('keydown', (event) => {
         search()
     }
 })
-
-)
