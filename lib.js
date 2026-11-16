@@ -10,12 +10,9 @@ function checkTheme() {
     const theme = localStorage.getItem('theme')
 
     if (theme === null) {
-        if (theme === null) {
-    localStorage.setItem('theme', 'light')
-    themeIcon.src = 'themeL.webp'
-    body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
-}
-
+        localStorage.setItem('theme', 'light')
+        themeIcon.src = 'themeL.webp'
+        body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
     }
 
     else if (theme === 'light') {
