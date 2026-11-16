@@ -1,5 +1,5 @@
 if (localStorage.getItem('Search Engine') === null) {
-    localStorage.setItem('Search Engine', 'Google')
+    localStorage.setItem('Search Engine', 'Duckduckgo')
 }
 
 function checkTheme() {
