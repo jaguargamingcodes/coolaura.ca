@@ -1,3 +1,7 @@
+const searchInput = document.getElementById('search_input')
+const themeIcon = document.getElementById('theme')
+const body = document.body
+
 if (localStorage.getItem('Search Engine') === null) {
     localStorage.setItem('Search Engine', 'Duckduckgo')
 }
@@ -10,13 +14,13 @@ function checkTheme() {
     }
 
     else if (theme === 'light') {
-        document.getElementById('theme').setAttribute('src', 'themeL.webp');
-        document.body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
+        themeIcon.src = 'themeL.webp'
+        body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
     }
 
     else if (theme === 'dark') {
-        document.getElementById('theme').setAttribute('src', 'themeD.webp')
-        document.body.style.backgroundImage = 'linear-gradient(45deg, rgb(26, 41, 26), rgb(22, 22, 42))'
+        themeIcon.src = 'themeD.webp'
+        body.style.backgroundImage = 'linear-gradient(45deg, rgb(26, 41, 26), rgb(22, 22, 42))'
     }
 }
 
@@ -35,7 +39,7 @@ function checkWallpaper() {
  const wallpaper = localStorage.getItem('wallpaper')
 
     if (wallpaper !== null) {
-        document.body.style.backgroundImage = `url(${wallpaper})`
+        body.style.backgroundImage = `url(${wallpaper})`
     }
 
 }
@@ -89,7 +93,7 @@ function Yandex() {
 }
 
 function search() {
-    let query = document.getElementById('search_input').value
+    let query = searchInput.value
     const engine = localStorage.getItem('Search Engine')
 
     if (query.includes('https://') || query.includes('.')) {
@@ -110,7 +114,7 @@ function search() {
     }
 }
 
-document.getElementById('search_input').addEventListener('keydown', (event) => {
+searchInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         event.preventDefault()
         search()
