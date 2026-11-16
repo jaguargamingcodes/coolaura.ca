@@ -10,12 +10,12 @@ function checkTheme() {
     }
 
     else if (theme === 'light') {
-        document.getElementById('theme').setAttribute('src', 'themeL.png');
+        document.getElementById('theme').setAttribute('src', 'themeL.webp');
         document.body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
     }
 
     else if (theme === 'dark') {
-        document.getElementById('theme').setAttribute('src', 'themeD.png')
+        document.getElementById('theme').setAttribute('src', 'themeD.webp')
         document.body.style.backgroundImage = 'linear-gradient(45deg, rgb(26, 41, 26), rgb(22, 22, 42))'
     }
 }
