@@ -91,28 +91,30 @@ function Yandex() {
 function search() {
     let query = document.getElementById('search_input').value
     const engine = localStorage.getItem('Search Engine')
+
     if (query.includes('https://') || query.includes('.')) {
         document.location = query
+        return
     }
 
-if (engine === 'Google') {
-    window.location = `https://google.com/search?q=${encodeURIComponent(query)}`
-} else (engine === 'Duckduckgo') {
-    window.location = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`
-} else (engine === 'Bing') {
-    window.location = `https://bing.com/search?q=${encodeURIComponent(query)}`
-} else (engine === 'Yahoo!') {
-    window.location = `https://yahoo.com/search?p=${encodeURIComponent(query)}`
-} else (engine === 'Yandex') {
-    window.location = `https://yandex.com/search?text=${encodeURIComponent(query)}`
+    if (engine === 'Google') {
+        window.location = `https://google.com/search?q=${encodeURIComponent(query)}`
+    } else if (engine === 'Duckduckgo') {
+        window.location = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`
+    } else if (engine === 'Bing') {
+        window.location = `https://bing.com/search?q=${encodeURIComponent(query)}`
+    } else if (engine === 'Yahoo!') {
+        window.location = `https://yahoo.com/search?p=${encodeURIComponent(query)}`
+    } else if (engine === 'Yandex') {
+        window.location = `https://yandex.com/search?text=${encodeURIComponent(query)}`
+    }
 }
 
-
 document.getElementById('search_input').addEventListener('keydown', (event) => {
-    if (event.key === "Enter") {
+    if (event.key === 'Enter') {
         event.preventDefault()
         search()
     }
-}
-    
+})
+
 )
