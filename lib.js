@@ -60,9 +60,6 @@ function checkPalette() {
     }
 }
 
-    }
-}
-
 function setPalette() {
     let hue = window.prompt('Set Color Degree Number (custom theme)')
     if (hue !== null) {
@@ -98,15 +95,15 @@ function search() {
         document.location = query
     }
 
-engine === 'Google' {
+if (engine === 'Google') {
     window.location = `https://google.com/search?q=${encodeURIComponent(query)}`
-} engine === 'Duckduckgo' {
+} else (engine === 'Duckduckgo') {
     window.location = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`
-} engine === 'Bing' {
+} else (engine === 'Bing') {
     window.location = `https://bing.com/search?q=${encodeURIComponent(query)}`
-} engine === 'Yahoo!' {
+} else (engine === 'Yahoo!') {
     window.location = `https://yahoo.com/search?p=${encodeURIComponent(query)}`
-} engine === 'Yandex' {
+} else (engine === 'Yandex') {
     window.location = `https://yandex.com/search?text=${encodeURIComponent(query)}`
 }
 
