@@ -47,7 +47,7 @@ function checkWallpaper() {
 }
 
 function setWP() {
-    let wallpaper = window.prompt('Please enter Wallpaper link (Image Adress).')
+    let wallpaper = window.prompt('Enter an image address here: ')
     if (wallpaper !== null) {
         localStorage.setItem('wallpaper', wallpaper)
     }
@@ -67,7 +67,7 @@ function checkPalette() {
 }
 
 function setPalette() {
-    let hue = window.prompt('Set Color Degree Number (custom theme)')
+    let hue = window.prompt('Set color degree number (custom theme)')
     if (hue !== null) {
         localStorage.setItem('hue', hue)
     }
