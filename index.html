@@ -4,44 +4,45 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="image" href="logo.webp">
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>New Tab</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="favicon.webp">
 </head>
 
 <body>
   <div id="main_container">
-    <img src="logo.png" id="logo">
-    <p id="slogan">One search. Many engines.</p>
+    <img src="logo.webp" id="logo">
+    <p id="slogan">One search, many engines.</p>
     <div id="searchbar">
-      <input id="search_input" placeholder="Search coolaura..." type="text">
-      <button onclick="search()" id="search">
-        <img id="sIcon" src="Search_icon.png">
+      <input id="search_input" placeholder="Search anything!" type="text">
+      <button onclick="search()" id="search_button">
+        <img id="sIcon" src="Search_icon.webp">
       </button>
     </div>
     <div class="gap"></div>
     <div id="engine_container">
-      <img id="theme" class="searchimgs" onclick="toggleTheme()" src="themeL.png">
+      <img id="theme" class="searchimgs" onclick="toggleTheme()" src="themeL.webp">
       <div class="bar"></div>
-      <img id="wallpaper" class="searchimgs" onclick="setWP()" src="WPicon.png">
+      <img id="wallpaper" class="searchimgs" onclick="setWP()" src="WPicon.webp">
       <div class="bar"></div>
-      <img id="info" class="searchimgs" onclick="i()" src="info.png">
+      <img id="info" class="searchimgs" onclick="i()" src="info.webp">
       <div class="bar"></div>
-      <img id="info" class="searchimgs" onclick="setPalette()" src="palette.png">
+      <img id="palette" class="searchimgs" onclick="setPalette()" src="palette.webp">
       <div class="bar"></div>
     </div>
     <div id="SelectorContainer">
       <span onclick="Google()" class="Selectors" id="Google">Google</span>
-      <span onclick="Duck()" class="Selectors" id="Duckduckgo">Duckduckgo</span>
+      <span onclick="Duck()" class="Selectors" id="Duckduckgo">DuckDuckGo</span>
       <span onclick="Bing()" class="Selectors" id="Bing">Bing</span>
       <span onclick="Yahoo()" class="Selectors" id="Yahoo!">Yahoo!</span>
       <span onclick="Yandex()" class="Selectors" id="Yandex">Yandex</span>
     </div>
   </div>
-  <script src="lib.js">
-  </script>
+<script src="lib.js" defer></script>
 </body>
 
 </html>

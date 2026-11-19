@@ -1,24 +1,30 @@
-if (localStorage.getItem('Search Engine') === null) {
-    localStorage.setItem('Search Engine', 'Google')
-}
+const searchInput = document.getElementById('search_input')
+const themeIcon = document.getElementById('theme')
+const body = document.body
 
+if (localStorage.getItem('Search Engine') === null) {
+    localStorage.setItem('Search Engine', 'Duckduckgo')
+}
 
 function checkTheme() {
-    if (localStorage.getItem('theme') === null) {
+    const theme = localStorage.getItem('theme')
+
+    if (theme === null) {
         localStorage.setItem('theme', 'light')
+        themeIcon.src = 'themeL.webp'
+        body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
     }
 
-    else if (localStorage.getItem('theme') === 'light') {
-        document.getElementById('theme').setAttribute('src', 'themeL.png');
-        document.body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
+    else if (theme === 'light') {
+        themeIcon.src = 'themeL.webp'
+        body.style.backgroundImage = 'linear-gradient(45deg, rgb(211, 255, 211), rgb(211, 211, 255))'
     }
 
-    else if (localStorage.getItem('theme') === 'dark') {
-        document.getElementById('theme').setAttribute('src', 'themeD.png')
-        document.body.style.backgroundImage = 'linear-gradient(45deg, rgb(26, 41, 26), rgb(22, 22, 42))'
+    else if (theme === 'dark') {
+        themeIcon.src = 'themeD.webp'
+        body.style.backgroundImage = 'linear-gradient(45deg, rgb(26, 41, 26), rgb(22, 22, 42))'
     }
 }
-
 
 
 function toggleTheme() {
@@ -32,14 +38,16 @@ function toggleTheme() {
 }
 
 function checkWallpaper() {
-    if (localStorage.getItem('wallpaper') !== null) {
-        document.body.style.backgroundImage = `url(${localStorage.getItem('wallpaper')}`
+ const wallpaper = localStorage.getItem('wallpaper')
+
+    if (wallpaper !== null) {
+        body.style.backgroundImage = `url(${wallpaper})`
     }
 
 }
 
 function setWP() {
-    let wallpaper = window.prompt('Please enter Wallpaper link (Image Adress).')
+    let wallpaper = window.prompt('Enter an image address here: ')
     if (wallpaper !== null) {
         localStorage.setItem('wallpaper', wallpaper)
     }
@@ -51,14 +59,15 @@ checkTheme()
 checkPalette()
 
 function checkPalette() {
-    if (localStorage.getItem('hue') !== null) {
-        document.documentElement.style.filter = `hue-rotate(${localStorage.getItem('hue')}deg)`
+    const hue = localStorage.getItem('hue')
+
+    if (hue !== null) {
+        document.documentElement.style.filter = `hue-rotate(${hue}deg)`
     }
-    console.log('hello')
 }
 
 function setPalette() {
-    let hue = window.prompt('Set Color Degree Number (custom theme)')
+    let hue = window.prompt('Set color degree number (custom theme)')
     if (hue !== null) {
         localStorage.setItem('hue', hue)
     }
@@ -86,29 +95,30 @@ function Yandex() {
 }
 
 function search() {
-    let query = document.getElementById('search_input').value
+    let query = searchInput.value
+    const engine = localStorage.getItem('Search Engine')
+
     if (query.includes('https://') || query.includes('.')) {
         document.location = query
+        return
     }
 
-    if (localStorage.getItem('Search Engine') == 'Google') {
-        window.location = `https://google.com/search?q=${query}`
-    } else if (localStorage.getItem('Search Engine') == 'Duckduckgo') {
-        window.location = `https://duckduckgo.com/?q=${query}`
-    } else if (localStorage.getItem('Search Engine') == 'Bing') {
-        window.location = `https://bing.com/search?q=${query}`
-    } else if (localStorage.getItem('Search Engine') == 'Yahoo!') {
-        window.location = `https://yahoo.com/search?p=${query}`
-    } else if (localStorage.getItem('Search Engine') == 'Yandex') {
-        window.location = `https://yandex.com/search?text=${query}`
+    if (engine === 'Google') {
+        window.location = `https://google.com/search?q=${encodeURIComponent(query)}`
+    } else if (engine === 'Duckduckgo') {
+        window.location = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`
+    } else if (engine === 'Bing') {
+        window.location = `https://bing.com/search?q=${encodeURIComponent(query)}`
+    } else if (engine === 'Yahoo!') {
+        window.location = `https://yahoo.com/search?p=${encodeURIComponent(query)}`
+    } else if (engine === 'Yandex') {
+        window.location = `https://yandex.com/search?text=${encodeURIComponent(query)}`
     }
 }
 
-document.getElementById('search_input').addEventListener('keydown', (event) => {
-    if (event.key === "Enter") {
+searchInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
         event.preventDefault()
         search()
     }
-}
-    
-)
+})
